@@ -1,15 +1,12 @@
 import React from "react";
-import styled from 'styled-components';
+import content from "./content.md";
 
 function Methods() {
   return (
-    <div className="static container">
-      <h1>Methods</h1>
-
-      <p className="paragraph">
-        Under Construction
-      </p>
-    </div>
+    <div
+      className="static container markdown"
+      dangerouslySetInnerHTML={{ __html: content }}
+    />
   )
 }
 
