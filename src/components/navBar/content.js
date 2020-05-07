@@ -71,7 +71,7 @@ export const AuspiceNavBar = ({narrativeTitle, width, changePage}) => {
       <LogoLink href="/">
         <img
           alt="splashPage"
-          width="40px"data-infodata-infodata-infodata-infodata-info
+          width="40px"
           src={logoPNG}
           style={{ borderRadius: '50%' }}
         />
