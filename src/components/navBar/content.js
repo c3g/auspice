@@ -58,10 +58,10 @@ const PageLink = styled.a`
 `
 
 const links = [
-  { name: "Accueil", path: "/" },
-  { name: "Contact", path: "/contact" },
+  { name: "Accueil",  path: "/" },
+  { name: "Contact",  path: "/contact" },
   { name: "À propos", path: "/about" },
-  { name: "Données", path: "/data" },
+  { name: "Données",  path: "/data-info" },
   { name: "Méthodes", path: "/methods" },
 ]
 
