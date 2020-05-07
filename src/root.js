@@ -9,6 +9,9 @@ import Head from "./components/framework/head";
 import NavBar from "./components/navBar";
 
 const Main = lazy(() => import("./components/main"));
+const About = lazy(() => import("./components/about"));
+const Data = lazy(() => import("./components/data"));
+const Methods = lazy(() => import("./components/methods"));
 const Contact = lazy(() => import("./components/contact"));
 const Splash = lazy(() => import("./components/splash"));
 const Status = lazy(() => import("./components/status"));
@@ -25,7 +28,6 @@ const ContentContainer = styled.div`
   flex: 1;
   overflow: auto;
 `
-
 
 @connect((state) => ({
   displayComponent: state.general.displayComponent,
@@ -60,6 +62,24 @@ class MainComponentSwitch extends React.Component {
         return (
           <Suspense fallback={<Spinner/>}>
             <Contact/>
+          </Suspense>
+        );
+      case "about":
+        return (
+          <Suspense fallback={<Spinner/>}>
+            <About/>
+          </Suspense>
+        );
+      case "data-info":
+        return (
+          <Suspense fallback={<Spinner/>}>
+            <Data/>
+          </Suspense>
+        );
+      case "methods":
+        return (
+          <Suspense fallback={<Spinner/>}>
+            <Methods/>
           </Suspense>
         );
       case "datasetLoader":

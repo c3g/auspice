@@ -1,7 +1,7 @@
 import React from "react";
 import content from "./content.md";
 
-function Contact() {
+function Methods() {
   return (
     <div
       className="static container markdown"
@@ -10,4 +10,4 @@ function Contact() {
   )
 }
 
-export default Contact;
+export default Methods;
