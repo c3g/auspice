@@ -11,10 +11,10 @@ export const chooseDisplayComponentFromURL = (url) => {
   const parts = url.toLowerCase().replace(/^\/+/, "").replace(/\/+$/, "").split("/");
 
   switch (parts[0]) {
-    case "contact": return "contact";
-    case "about":   return "about";
-    case "data":    return "data";
-    case "methods": return "methods";
+    case "contact":   return "contact";
+    case "about":     return "about";
+    case "data-info": return "data-info";
+    case "methods":   return "methods";
   }
 
   if (

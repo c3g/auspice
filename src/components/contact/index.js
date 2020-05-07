@@ -1,17 +1,12 @@
 import React from "react";
-import styled from 'styled-components';
+import content from "./content.md";
 
 function Contact() {
   return (
-    <div className="static container">
-      <h1>Contact</h1>
-
-      <p className="paragraph">
-      Pour toute questions: / You have questions? Write us at:
-      <p><a href="mailto:contact@covseq.ca">contact@covseq.ca</a></p>.
-
-      </p>
-    </div>
+    <div
+      className="static container markdown"
+      dangerouslySetInnerHTML={{ __html: content }}
+    />
   )
 }
 
