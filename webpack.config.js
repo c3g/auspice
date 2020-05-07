@@ -119,7 +119,11 @@ const generateConfig = ({extensionPath, devMode=false, customOutputPath, analyze
         {
           test: /\.(gif|png|jpe?g|svg|woff2?|eot|otf|ttf)$/i,
           use: "file-loader"
-        }
+        },
+        {
+          test: /\.md$/,
+          use: ["html-loader", "markdown-loader"]
+        },
       ]
     }
   };

@@ -70,7 +70,7 @@ class MainComponentSwitch extends React.Component {
             <About/>
           </Suspense>
         );
-      case "data":
+      case "data-info":
         return (
           <Suspense fallback={<Spinner/>}>
             <Data/>
