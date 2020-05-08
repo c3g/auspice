@@ -31,7 +31,7 @@ the Ministere de la santé et des services sociaux du Québec.
 <li>  Sandrine Moreira, Head of genomics and bioinformatics</li>
 <li>  Hugues Charest, Head of respiratory viruses</li>
 <li>  Réjean Dion, Medical epidemiologist</li>
-<li>  Eric Fournier </li>
+<li>  Eric Fournier, Bioinformatician</li>
 </ul>
 
 ### McGIll Genome Center
