@@ -13,17 +13,21 @@ const SplashContent = hasExtension("splashComponent") ?
 /* TODO: check that when compiling DefaultSplashContent isn't included if extension is defined */
 
 
-@connect((state) => ({
-  errorMessage: state.general.errorMessage,
-  browserDimensions: state.browserDimensions.browserDimensions,
-  reduxPathname: state.general.pathname
-}))
+@connect(
+  (state) => ({
+    errorMessage: state.general.errorMessage,
+    browserDimensions: state.browserDimensions.browserDimensions,
+    reduxPathname: state.general.pathname
+  }),
+  dispatch => ({
+    changePage: path => dispatch(changePage(path))
+  })
+)
 class Splash extends React.Component {
-  constructor(props) {
-    super(props);
-    /* state is set via the returned JSON from the server (aka charon) in the fetch in CDM */
-    this.state = {available: {}, errorMessage: undefined};
-  }
+  state = {
+    available: {},
+    errorMessage: undefined
+  };
   componentDidMount() {
     fetchJSON(`${getServerAddress()}/getAvailable?prefix=${this.props.reduxPathname}`)
       .then((json) => {
@@ -43,7 +47,7 @@ class Splash extends React.Component {
           browserDimensions={this.props.browserDimensions}
           dispatch={this.props.dispatch}
           errorMessage={this.props.errorMessage || this.state.errorMessage}
-          changePage={changePage}
+          changePage={this.props.changePage}
         />
       </ErrorBoundary>
     );

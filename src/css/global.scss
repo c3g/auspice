@@ -4,7 +4,6 @@ html, p, div, input, button {
   font-weight: 400;
   color: "#333";
 }
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
  * 1. Set default font family to sans-serif.
@@ -17,7 +16,8 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   -webkit-overflow-scrolling: touch;  
 }
-/**
+
+/*
  * Remove default margin.
  */
 html, body, #root, [data-reactid=".0"] {
@@ -26,16 +26,44 @@ html, body, #root, [data-reactid=".0"] {
   position: relative;
 }
 
+/* Stop horizontal scroll bar appearing */
+body {
+  overflow-x: hidden;
+}
+
+
 /*
-links
-*/
-a, .link {
-  color: #5097BA;
-  text-decoration: none;
+ * Elements
+ */
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #CCC;
+}
+
+/*
+ * Button
+ */
+
+.button {
+  border: 1px solid #CCC;
+  background-color: inherit;
+  border-radius: 3px;
   cursor: pointer;
-  font-family: "Lato", "Helvetica Neue", "Helvetica", "sans-serif";
+  padding: 5px 10px 5px 10px;
+  font-size: 16px;
+  font-family: Lato,Helvetica Neue,Helvetica,sans-serif;
+  color: #888;
   font-weight: 400;
-  font-size: 94%;
+  text-transform: uppercase;
+  font-size: 14;
+  vertical-align: middle;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 /* from Bootstrap */

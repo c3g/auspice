@@ -1,26 +1,116 @@
 import React from "react";
 import styled from 'styled-components';
 import Flex from "../../components/framework/flex";
-import { logos } from "./logos";
-import { CenterContent } from "./centerContent";
+import Link from "../../components/framework/link";
 
-const SplashContent = ({available, browserDimensions, dispatch, errorMessage, changePage}) => {
+const CenterContent = ({ children }) => (
+  <div className="row">
+    <div className="col-md-1"/>
+    <div className="col-md-10">
+      <Flex wrap="wrap" style={{marginTop: 20, justifyContent: "space-around"}}>
+        {children}
+      </Flex>
+    </div>
+    <div className="col-md-1"/>
+  </div>
+);
+
+const ErrorMessage = ({ message }) => (
+  <CenterContent>
+    <div>
+      <p style={{color: "rgb(222, 60, 38)", fontWeight: 600, fontSize: "24px"}}>
+        {"😱 404, or an error has occured 😱"}
+      </p>
+      <p style={{color: "rgb(222, 60, 38)", fontWeight: 400, fontSize: "18px"}}>
+        {`Details: ${message}`}
+      </p>
+      <p style={{fontSize: "16px"}}>
+        {"If this keeps happening, or you believe this is a bug, please "}
+        <a href={"mailto:hello@nextstrain.org"}>{"get in contact with us."}</a>
+      </p>
+    </div>
+  </CenterContent>
+);
+
+const HeaderTitle = styled.h1`
+  text-align: center;
+  margin-top: 20px;
+  font-size: 105px;
+  letter-spacing: 1.5rem;
+`
+
+const Title = styled.h1`
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 300;
+`
+
+const Subtitle = styled.h2`
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+`
+
+const Paragraph = styled.p`
+  font-size: 16px;
+  margin-bottom: 2rem;
+`
+
+const ButtonContainer = styled.div`
+  text-align: center;
+  margin-bottom: 2rem;
+`
+
+const Spacer = styled.hr`
+  border: none;
+  margin-tom: 0rem;
+  margin-bottom: 4rem;
+`
+
+const CardContainer = styled.div`
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 0 100px;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+`
+
+const Card = styled.div`
+  color: white;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  padding: 0.5em;
+  width: 60%;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+`
+
+
+const SplashContent = ({available, dispatch, errorMessage, changePage}) => {
 
   const Header = () => (
     <>
       <Flex justifyContent="center">
         <div style={{paddingRight: "40px"}}>
-          <h1 style={{textAlign: "center", marginTop: "20px", fontSize: "40px", letterSpacing: "1.5rem"}}>
-            {"CoVSeQ"}
-          </h1>
-          <h2 style={{textAlign: "center", maxWidth: "410px", fontSize: "28px", lineHeight: "32px" }}>
-            {"Visualisation interactive des differentes souche de la Covid-19 Séquencées au" +
-            " Québec (CoVSeQ)"}
-          </h2>
+          <HeaderTitle>
+            <span style={{ color: '#4377CD' }}>C</span>
+            <span style={{ color: '#5097BA' }}>o</span>
+            <span style={{ color: '#7CB879' }}>V</span>
+            <span style={{ color: '#D4B13F' }}>S</span>
+            <span style={{ color: '#E49938' }}>e</span>
+            <span style={{ color: '#E67030' }}>Q</span>
+          </HeaderTitle>
         </div>
         <img
           alt="logo"
-          style={{ width: 280 }}
+          style={{ width: 200 }}
           src={
             require("../../images/VisuelCoronavirus-ms.jpg") // eslint-disable-line global-require
           }
@@ -29,95 +119,196 @@ const SplashContent = ({available, browserDimensions, dispatch, errorMessage, ch
     </>
   );
 
-  const Intro = () => (
-    <p className="paragraph" style={{ textAlign: "center" }}>
-      Phylogénie des données du virus Covid-19 du LSPQ combinée à celles
-      de <a href="https://www.gisaid.org">GISAID</a>.<br/>
-      Ce site est déployé grace à la platforme <a href="https://www.nextstrain.org">nextrain</a>.
-    </p>
-  );
-
-  const ErrorMessage = () => (
-    <CenterContent>
-      <div>
-        <p style={{color: "rgb(222, 60, 38)", fontWeight: 600, fontSize: "24px"}}>
-          {"😱 404, or an error has occured 😱"}
-        </p>
-        <p style={{color: "rgb(222, 60, 38)", fontWeight: 400, fontSize: "18px"}}>
-          {`Details: ${errorMessage}`}
-        </p>
-        <p style={{fontSize: "16px"}}>
-          {"If this keeps happening, or you believe this is a bug, please "}
-          <a href={"mailto:hello@nextstrain.org"}>{"get in contact with us."}</a>
-        </p>
-      </div>
-    </CenterContent>
-  );
-
-  const ListAvailable = ({type, data}) => (
-    <div style={{ maxWidth: 780, margin: '0 auto' }}>
-      <div style={{fontSize: "26px"}}>
-        {`${type} disponibles:`}
-      </div>
+  const ListAvailable = ({data}) => (
+    <>
       {
         data ? (
-          <ul style={{ fontSize: 18 }}>
+          <CardContainer>
             {data.map((d) => (
-              <li key={d.request}>
-                <div
-                  className="clickable"
-                  onClick={() => dispatch(changePage({path: d.request, push: true}))}
-                >
-                  {d.request}
-                </div>
-              </li>
+              <Card
+                key={d.request}
+                onClick={() => dispatch(changePage({path: d.request, push: true}))}
+              >
+                {d.request}
+              </Card>
             ))}
-          </ul>
+          </CardContainer>
         ) : (
           <p>Aucune</p>
         )
       }
+    </>
+  );
+
+  const Content = () => (
+    <div style={{ maxWidth: 780, margin: '0 auto' }}>
+
+      <Title>
+        Real-time tracking of Quebec SARS-CoV-2 evolution
+      </Title>
+      <Paragraph className="text-center">
+        CoVSeQ is a partnership between
+        the <a href="">Institut National de Sant&eacute; Publique du Qu&eacute;bec (INSPQ)</a> and
+        the <a href="">McGill Genome Center</a> to sequence the viral genome of Quebec
+        patients with COVID-19 disease. The viral samples are taken from a Quebec viral
+        biobank, termed the CoVBanQ, which is hosted in
+        the <a href="">Laboratoire de Sant&eacute; Publique du Qu&eacute;bec (LSPQ)</a>.
+        The website is based on <a href="">Nextstrain</a>, an open-source project to
+        harness the scientific and public health potential of pathogen genome data. It
+        provides powerful analytic and visualization tools to aid epidemiological
+        understanding and improve outbreak response.
+      </Paragraph>
+      <ButtonContainer>
+        <a href="#philosophy" className="button">
+          Read More
+        </a>
+      </ButtonContainer>
+      <Spacer />
+
+      <Title>
+        Vues disponibles
+      </Title>
+      <ListAvailable data={available.datasets}/>
+
+      <Title>
+        Partnership
+      </Title>
+      <Subtitle>
+        INSPQ
+      </Subtitle>
+      <Paragraph>
+        The Institut de Santé Publique du Québec (INSPQ, Public Health Institut of Quebec is
+        XXX As a part of INSPQ, the Laboratoire de Santé Publique du Québec (LSPQ, Public
+        Health Laboratory of Quebec) is the reference microbiology laboratory of Québec.
+        LSPQ performs specialised analyses for the diagnostic and the surveillance of
+        infectious diseases
+      </Paragraph>
+      <Subtitle>
+        McGill Genome Center
+      </Subtitle>
+      <Paragraph>
+        MGC is super great and bla bla bla <strong style={{ color: 'red' }}>FIXME</strong>
+      </Paragraph>
+      <ButtonContainer>
+        <a href="#FIXME" className="button">
+          Read more about governance
+        </a>
+      </ButtonContainer>
+      <Spacer />
+
+      <Title id="philosophy">
+        Philosophy
+      </Title>
+      <Subtitle>
+        Pathogen Phylogenies
+      </Subtitle>
+      <Paragraph>
+        In the course of an infection and over an epidemic, pathogens naturally accumulate
+        random mutations to their genomes. This is an inevitable consequence of error-prone
+        genome replication. Since different genomes typically pick up different mutations,
+        mutations can be used as a marker of transmission in which closely related genomes
+        indicate closely related infections. By reconstructing a phylogeny we can learn about
+        important epidemiological phenomena such as spatial spread, introduction timings and
+        epidemic growth rate.
+      </Paragraph>
+      <Subtitle>
+        Actionable Inferences
+      </Subtitle>
+      <Paragraph>
+        However, if pathogen genome sequences are going to inform public health interventions,
+        then analyses have to be rapidly conducted and results widely disseminated.
+        Current scientific publishing practices hinder the rapid dissemination of
+        epidemiologically relevant results. We thought an open online system that
+        implements robust bioinformatic pipelines to synthesize data from across research
+        groups has the best capacity to make epidemiologically actionable inferences.
+      </Paragraph>
+      <ButtonContainer>
+        <Link url="/methods" className="button">
+          Read more about our workflow and methods
+        </Link>
+      </ButtonContainer>
+      <Subtitle>
+        CoVBanQ
+      </Subtitle>
+      <Paragraph>
+        The Coronavirus Banq of Quebec is a biobanq of primary clinical specimen collected by
+        Québec hospitals and centralized in INSPQ. Specimen collected are aliquots from
+        nasopharyngeal or oropharyngeal swabs, saliva, broncho-alveolar lavage, expectoration,
+        tissues or feces. Through a targeted sampling strategy, Public Health Authorities
+        prioritize the samples to sequence in order to investigate specific outbreaks.
+        @nextstrain.org.
+      </Paragraph>
+      <Subtitle>
+        This Website
+      </Subtitle>
+      <Paragraph>
+        This website aims to provide a real-time snapshot of evolving pathogen populations in
+        Québec and to provide interactive data visualizations to virologists, epidemiologists,
+        public health officials and citizen scientists. Through interactive data visualizations,
+        we aim to allow exploration of continually up-to-date datasets, providing a novel
+        surveillance tool to the scientific and public health communities.
+      </Paragraph>
+      <Spacer />
+
+      <Title>
+        Data sharing
+      </Title>
+      <Paragraph>
+        Short bla bla on data sharing policy <strong style={{ color: 'red' }}>FIXME</strong>
+      </Paragraph>
+      <ButtonContainer>
+        <Link url="/data-info" className="button">
+          Read more about data sharing
+        </Link>
+      </ButtonContainer>
+      <Spacer />
+
     </div>
   );
 
   const Footer = () => (
     <CenterContent>
       <a href="https://www.inspq.qc.ca/" target="_blank" rel="noreferrer noopener">
-        <img alt="logo" width="200" src={require("../../images/inspq.jpg")}/>
+        <img alt="logo" width="100" src={require("../../images/inspq.jpg")}/>
       </a>
       <a href="http://www.mcgillgenomecentre.org/" target="_blank" rel="noreferrer noopener">
-        <img alt="logo" width="200" src={require("../../images/Genome_logo.png")}/>
+        <img alt="logo" width="60" src={require("../../images/Genome_logo.png")}/>
       </a>
       <a href="http://www.computationalgenomics.ca/" target="_blank" rel="noreferrer noopener">
-        <img alt="logo" width="200" src={require("../../images/c3g_source.png")}/>
+        <img alt="logo" width="60" src={require("../../images/c3g_source.png")}/>
       </a>
-      <div>
-        <a href="https://www.inspq.qc.ca/lspq" target="_blank" rel="noreferrer noopener">
-          <img alt="logo" width="165" src={require("../../images/lspq.jpeg")}/>
-        </a>
-        <a href="https://www.calculquebec.ca/" target="_blank" rel="noreferrer noopener">
-          <img alt="logo" width="165" src={require("../../images/CalculQuebec_logo_medium.png")}/>
-        </a>
-        <a href="https://www.mcgill.ca/" target="_blank" rel="noreferrer noopener">
-          <img alt="logo" width="165" src={require("../../images/Mcgill_Logo.png")}/>
-        </a>
-        <a href="https://www.umontreal.ca/" target="_blank" rel="noreferrer noopener">
-          <img alt="logo" width="165" src={require("../../images/UdeM-officiel-RVB.png")}/>
-        </a>
-      </div>
+      <a href="https://www.inspq.qc.ca/lspq" target="_blank" rel="noreferrer noopener">
+        <img alt="logo" width="60" src={require("../../images/lspq.jpeg")}/>
+      </a>
+      <a href="https://www.calculquebec.ca/" target="_blank" rel="noreferrer noopener">
+        <img alt="logo" width="60" src={require("../../images/CalculQuebec_logo_medium.png")}/>
+      </a>
+      <a href="https://www.mcgill.ca/" target="_blank" rel="noreferrer noopener">
+        <img alt="logo" width="60" src={require("../../images/Mcgill_Logo.png")}/>
+      </a>
+      <a href="https://www.umontreal.ca/" target="_blank" rel="noreferrer noopener">
+        <img alt="logo" width="60" src={require("../../images/UdeM-officiel-RVB.png")}/>
+      </a>
     </CenterContent>
   );
 
-
-
   return (
-    <div className="static container">
+    <div className="container">
       <Header/>
-      {errorMessage ? <ErrorMessage/> : <Intro/>}
-      <ListAvailable type="Vues" data={available.datasets}/>
+      {errorMessage && <ErrorMessage message={errorMessage} />}
+      <Content />
+      <hr/>
       <Footer/>
+      <Spacer />
     </div>
   );
 };
+
+function preventDefault(fn, ...args) {
+  return (ev) => {
+    ev.preventDefault()
+    fn(...args)
+  }
+}
 
 export default SplashContent;
