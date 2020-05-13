@@ -1,4 +1,8 @@
 
+* {
+  box-sizing: border-box;
+}
+
 html, p, div, input, button {
   font-family: "Lato", "Helvetica Neue", "Helvetica", "sans-serif";
   font-weight: 400;
@@ -17,9 +21,7 @@ html {
   -webkit-overflow-scrolling: touch;  
 }
 
-/*
- * Remove default margin.
- */
+/* Remove default margin */
 html, body, #root, [data-reactid=".0"] {
   margin: 0;
   height: 100%;

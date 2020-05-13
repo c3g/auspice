@@ -1,0 +1,41 @@
+import React from "react";
+import styled from 'styled-components';
+import Flex from "../../components/framework/flex";
+
+const FooterContainer = styled.div`
+  margin-bottom: 6rem;
+`
+
+const Footer = () => (
+  <FooterContainer className="row">
+    <div className="col-md-1"/>
+    <div className="col-md-10">
+      <Flex wrap="wrap" style={{marginTop: 20, justifyContent: "space-around"}}>
+        <a href="https://www.inspq.qc.ca/" target="_blank" rel="noreferrer noopener">
+          <img alt="logo" width="100" src={require("../../images/inspq.jpg")}/>
+        </a>
+        <a href="http://www.mcgillgenomecentre.org/" target="_blank" rel="noreferrer noopener">
+          <img alt="logo" width="60" src={require("../../images/Genome_logo.png")}/>
+        </a>
+        <a href="http://www.computationalgenomics.ca/" target="_blank" rel="noreferrer noopener">
+          <img alt="logo" width="60" src={require("../../images/c3g_source.png")}/>
+        </a>
+        <a href="https://www.inspq.qc.ca/lspq" target="_blank" rel="noreferrer noopener">
+          <img alt="logo" width="60" src={require("../../images/lspq.jpeg")}/>
+        </a>
+        <a href="https://www.calculquebec.ca/" target="_blank" rel="noreferrer noopener">
+          <img alt="logo" width="60" src={require("../../images/CalculQuebec_logo_medium.png")}/>
+        </a>
+        <a href="https://www.mcgill.ca/" target="_blank" rel="noreferrer noopener">
+          <img alt="logo" width="60" src={require("../../images/Mcgill_Logo.png")}/>
+        </a>
+        <a href="https://www.umontreal.ca/" target="_blank" rel="noreferrer noopener">
+          <img alt="logo" width="60" src={require("../../images/UdeM-officiel-RVB.png")}/>
+        </a>
+      </Flex>
+    </div>
+    <div className="col-md-1"/>
+  </FooterContainer>
+);
+
+export default Footer;

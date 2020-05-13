@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import Flex from "../../components/framework/flex";
 import Link from "../../components/framework/link";
+import Footer from "../../components/footer";
 
 const CenterContent = ({ children }) => (
   <div className="row">
@@ -60,6 +61,7 @@ const Paragraph = styled.p`
 
 const ButtonContainer = styled.div`
   text-align: center;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 `
 
@@ -92,61 +94,54 @@ const Card = styled.div`
   }
 `
 
+const Header = () => (
+  <Flex justifyContent="center">
+    <div style={{paddingRight: "40px"}}>
+      <HeaderTitle>
+        <span style={{ color: '#4377CD' }}>C</span>
+        <span style={{ color: '#5097BA' }}>o</span>
+        <span style={{ color: '#7CB879' }}>V</span>
+        <span style={{ color: '#D4B13F' }}>S</span>
+        <span style={{ color: '#E49938' }}>e</span>
+        <span style={{ color: '#E67030' }}>Q</span>
+      </HeaderTitle>
+    </div>
+    <img
+      alt="logo"
+      style={{ width: 200 }}
+      src={
+        require("../../images/VisuelCoronavirus-ms.jpg") // eslint-disable-line global-require
+      }
+    />
+  </Flex>
+);
+
+const Views = ({data}) => (
+  data ? (
+    <CardContainer>
+      {data.map((d) => (
+        <Card
+          key={d.request}
+          onClick={() => dispatch(changePage({path: d.request, push: true}))}
+        >
+          {d.request}
+        </Card>
+      ))}
+    </CardContainer>
+  ) : (
+    <p>Aucune</p>
+  )
+);
 
 const SplashContent = ({available, dispatch, errorMessage, changePage}) => {
 
-  const Header = () => (
-    <>
-      <Flex justifyContent="center">
-        <div style={{paddingRight: "40px"}}>
-          <HeaderTitle>
-            <span style={{ color: '#4377CD' }}>C</span>
-            <span style={{ color: '#5097BA' }}>o</span>
-            <span style={{ color: '#7CB879' }}>V</span>
-            <span style={{ color: '#D4B13F' }}>S</span>
-            <span style={{ color: '#E49938' }}>e</span>
-            <span style={{ color: '#E67030' }}>Q</span>
-          </HeaderTitle>
-        </div>
-        <img
-          alt="logo"
-          style={{ width: 200 }}
-          src={
-            require("../../images/VisuelCoronavirus-ms.jpg") // eslint-disable-line global-require
-          }
-        />
-      </Flex>
-    </>
-  );
-
-  const ListAvailable = ({data}) => (
-    <>
-      {
-        data ? (
-          <CardContainer>
-            {data.map((d) => (
-              <Card
-                key={d.request}
-                onClick={() => dispatch(changePage({path: d.request, push: true}))}
-              >
-                {d.request}
-              </Card>
-            ))}
-          </CardContainer>
-        ) : (
-          <p>Aucune</p>
-        )
-      }
-    </>
-  );
-
   const Content = () => (
-    <div style={{ maxWidth: 780, margin: '0 auto' }}>
+    <>
 
       <Title>
         Real-time tracking of Quebec SARS-CoV-2 evolution
       </Title>
-      <Paragraph className="text-center">
+      <Paragraph className="text-center" style={{ maxWidth: 640, margin: 'auto' }}>
         CoVSeQ is a partnership between
         the <a href="">Institut National de Sant&eacute; Publique du Qu&eacute;bec (INSPQ)</a> and
         the <a href="">McGill Genome Center</a> to sequence the viral genome of Quebec
@@ -168,27 +163,33 @@ const SplashContent = ({available, dispatch, errorMessage, changePage}) => {
       <Title>
         Vues disponibles
       </Title>
-      <ListAvailable data={available.datasets}/>
+      <Views data={available.datasets}/>
 
       <Title>
         Partnership
       </Title>
-      <Subtitle>
-        INSPQ
-      </Subtitle>
-      <Paragraph>
-        The Institut de Santé Publique du Québec (INSPQ, Public Health Institut of Quebec is
-        XXX As a part of INSPQ, the Laboratoire de Santé Publique du Québec (LSPQ, Public
-        Health Laboratory of Quebec) is the reference microbiology laboratory of Québec.
-        LSPQ performs specialised analyses for the diagnostic and the surveillance of
-        infectious diseases
-      </Paragraph>
-      <Subtitle>
-        McGill Genome Center
-      </Subtitle>
-      <Paragraph>
-        MGC is super great and bla bla bla <strong style={{ color: 'red' }}>FIXME</strong>
-      </Paragraph>
+      <div className='row'>
+        <div className='col-md-6'>
+          <Subtitle>
+            INSPQ
+          </Subtitle>
+          <Paragraph>
+            The Institut de Santé Publique du Québec (INSPQ, Public Health Institut of Quebec is
+            XXX As a part of INSPQ, the Laboratoire de Santé Publique du Québec (LSPQ, Public
+            Health Laboratory of Quebec) is the reference microbiology laboratory of Québec.
+            LSPQ performs specialised analyses for the diagnostic and the surveillance of
+            infectious diseases
+          </Paragraph>
+        </div>
+        <div className='col-md-6'>
+          <Subtitle>
+            McGill Genome Center
+          </Subtitle>
+          <Paragraph>
+            MGC is super great and bla bla bla <strong style={{ color: 'red' }}>FIXME</strong>
+          </Paragraph>
+        </div>
+      </div>
       <ButtonContainer>
         <a href="#FIXME" className="button">
           Read more about governance
@@ -199,55 +200,67 @@ const SplashContent = ({available, dispatch, errorMessage, changePage}) => {
       <Title id="philosophy">
         Philosophy
       </Title>
-      <Subtitle>
-        Pathogen Phylogenies
-      </Subtitle>
-      <Paragraph>
-        In the course of an infection and over an epidemic, pathogens naturally accumulate
-        random mutations to their genomes. This is an inevitable consequence of error-prone
-        genome replication. Since different genomes typically pick up different mutations,
-        mutations can be used as a marker of transmission in which closely related genomes
-        indicate closely related infections. By reconstructing a phylogeny we can learn about
-        important epidemiological phenomena such as spatial spread, introduction timings and
-        epidemic growth rate.
-      </Paragraph>
-      <Subtitle>
-        Actionable Inferences
-      </Subtitle>
-      <Paragraph>
-        However, if pathogen genome sequences are going to inform public health interventions,
-        then analyses have to be rapidly conducted and results widely disseminated.
-        Current scientific publishing practices hinder the rapid dissemination of
-        epidemiologically relevant results. We thought an open online system that
-        implements robust bioinformatic pipelines to synthesize data from across research
-        groups has the best capacity to make epidemiologically actionable inferences.
-      </Paragraph>
+      <div className="row">
+        <div className="col-md-6">
+          <Subtitle>
+            Pathogen Phylogenies
+          </Subtitle>
+          <Paragraph>
+            In the course of an infection and over an epidemic, pathogens naturally accumulate
+            random mutations to their genomes. This is an inevitable consequence of error-prone
+            genome replication. Since different genomes typically pick up different mutations,
+            mutations can be used as a marker of transmission in which closely related genomes
+            indicate closely related infections. By reconstructing a phylogeny we can learn about
+            important epidemiological phenomena such as spatial spread, introduction timings and
+            epidemic growth rate.
+          </Paragraph>
+        </div>
+        <div className="col-md-6">
+          <Subtitle>
+            Actionable Inferences
+          </Subtitle>
+          <Paragraph>
+            However, if pathogen genome sequences are going to inform public health interventions,
+            then analyses have to be rapidly conducted and results widely disseminated.
+            Current scientific publishing practices hinder the rapid dissemination of
+            epidemiologically relevant results. We thought an open online system that
+            implements robust bioinformatic pipelines to synthesize data from across research
+            groups has the best capacity to make epidemiologically actionable inferences.
+          </Paragraph>
+        </div>
+      </div>
       <ButtonContainer>
         <Link url="/methods" className="button">
           Read more about our workflow and methods
         </Link>
       </ButtonContainer>
-      <Subtitle>
-        CoVBanQ
-      </Subtitle>
-      <Paragraph>
-        The Coronavirus Banq of Quebec is a biobanq of primary clinical specimen collected by
-        Québec hospitals and centralized in INSPQ. Specimen collected are aliquots from
-        nasopharyngeal or oropharyngeal swabs, saliva, broncho-alveolar lavage, expectoration,
-        tissues or feces. Through a targeted sampling strategy, Public Health Authorities
-        prioritize the samples to sequence in order to investigate specific outbreaks.
-        @nextstrain.org.
-      </Paragraph>
-      <Subtitle>
-        This Website
-      </Subtitle>
-      <Paragraph>
-        This website aims to provide a real-time snapshot of evolving pathogen populations in
-        Québec and to provide interactive data visualizations to virologists, epidemiologists,
-        public health officials and citizen scientists. Through interactive data visualizations,
-        we aim to allow exploration of continually up-to-date datasets, providing a novel
-        surveillance tool to the scientific and public health communities.
-      </Paragraph>
+      <div className="row">
+        <div className="col-md-6">
+          <Subtitle>
+            CoVBanQ
+          </Subtitle>
+          <Paragraph>
+            The Coronavirus Banq of Quebec is a biobanq of primary clinical specimen collected by
+            Québec hospitals and centralized in INSPQ. Specimen collected are aliquots from
+            nasopharyngeal or oropharyngeal swabs, saliva, broncho-alveolar lavage, expectoration,
+            tissues or feces. Through a targeted sampling strategy, Public Health Authorities
+            prioritize the samples to sequence in order to investigate specific outbreaks.
+            @nextstrain.org.
+          </Paragraph>
+        </div>
+        <div className="col-md-6">
+          <Subtitle>
+            This Website
+          </Subtitle>
+          <Paragraph>
+            This website aims to provide a real-time snapshot of evolving pathogen populations in
+            Québec and to provide interactive data visualizations to virologists, epidemiologists,
+            public health officials and citizen scientists. Through interactive data visualizations,
+            we aim to allow exploration of continually up-to-date datasets, providing a novel
+            surveillance tool to the scientific and public health communities.
+          </Paragraph>
+        </div>
+      </div>
       <Spacer />
 
       <Title>
@@ -263,33 +276,7 @@ const SplashContent = ({available, dispatch, errorMessage, changePage}) => {
       </ButtonContainer>
       <Spacer />
 
-    </div>
-  );
-
-  const Footer = () => (
-    <CenterContent>
-      <a href="https://www.inspq.qc.ca/" target="_blank" rel="noreferrer noopener">
-        <img alt="logo" width="100" src={require("../../images/inspq.jpg")}/>
-      </a>
-      <a href="http://www.mcgillgenomecentre.org/" target="_blank" rel="noreferrer noopener">
-        <img alt="logo" width="60" src={require("../../images/Genome_logo.png")}/>
-      </a>
-      <a href="http://www.computationalgenomics.ca/" target="_blank" rel="noreferrer noopener">
-        <img alt="logo" width="60" src={require("../../images/c3g_source.png")}/>
-      </a>
-      <a href="https://www.inspq.qc.ca/lspq" target="_blank" rel="noreferrer noopener">
-        <img alt="logo" width="60" src={require("../../images/lspq.jpeg")}/>
-      </a>
-      <a href="https://www.calculquebec.ca/" target="_blank" rel="noreferrer noopener">
-        <img alt="logo" width="60" src={require("../../images/CalculQuebec_logo_medium.png")}/>
-      </a>
-      <a href="https://www.mcgill.ca/" target="_blank" rel="noreferrer noopener">
-        <img alt="logo" width="60" src={require("../../images/Mcgill_Logo.png")}/>
-      </a>
-      <a href="https://www.umontreal.ca/" target="_blank" rel="noreferrer noopener">
-        <img alt="logo" width="60" src={require("../../images/UdeM-officiel-RVB.png")}/>
-      </a>
-    </CenterContent>
+    </>
   );
 
   return (
@@ -299,7 +286,6 @@ const SplashContent = ({available, dispatch, errorMessage, changePage}) => {
       <Content />
       <hr/>
       <Footer/>
-      <Spacer />
     </div>
   );
 };
