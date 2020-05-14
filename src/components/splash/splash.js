@@ -284,7 +284,6 @@ const SplashContent = ({available, dispatch, errorMessage, changePage}) => {
       <Header/>
       {errorMessage && <ErrorMessage message={errorMessage} />}
       <Content />
-      <hr/>
       <Footer/>
     </div>
   );
