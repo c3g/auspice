@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Flex from "../../components/framework/flex";
 import Link from "../../components/framework/link";
 import Footer from "../../components/footer";
+import strings from "../../translations";
 
 const CenterContent = ({ children }) => (
   <div className="row">
@@ -129,7 +130,7 @@ const Views = ({data}) => (
       ))}
     </CardContainer>
   ) : (
-    <p>Aucune</p>
+    <p>{strings.splash.none}</p>
   )
 );
 
@@ -139,29 +140,20 @@ const SplashContent = ({available, dispatch, errorMessage, changePage}) => {
     <>
 
       <Title>
-        Real-time tracking of Quebec SARS-CoV-2 evolution
+        {strings.splash.title1}
       </Title>
       <Paragraph className="text-center" style={{ maxWidth: 640, margin: 'auto' }}>
-        CoVSeQ is a partnership between
-        the <a href="">Institut National de Sant&eacute; Publique du Qu&eacute;bec (INSPQ)</a> and
-        the <a href="">McGill Genome Center</a> to sequence the viral genome of Quebec
-        patients with COVID-19 disease. The viral samples are taken from a Quebec viral
-        biobank, termed the CoVBanQ, which is hosted in
-        the <a href="">Laboratoire de Sant&eacute; Publique du Qu&eacute;bec (LSPQ)</a>.
-        The website is based on <a href="">Nextstrain</a>, an open-source project to
-        harness the scientific and public health potential of pathogen genome data. It
-        provides powerful analytic and visualization tools to aid epidemiological
-        understanding and improve outbreak response.
+        {strings.splash.subtitle1}
       </Paragraph>
       <ButtonContainer>
         <a href="#philosophy" className="button">
-          Read More
+          {strings.splash.button1}
         </a>
       </ButtonContainer>
       <Spacer />
 
       <Title>
-        Vues disponibles
+        {strings.splash.availableViews}
       </Title>
       <Views data={available.datasets}/>
 
