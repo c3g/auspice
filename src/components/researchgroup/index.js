@@ -2,7 +2,7 @@ import React from "react";
 import content from "./content.md";
 import Footer from "../../components/footer";
 
-function About() {
+function ResearchGroup() {
   return (
     <>
       <div
@@ -15,4 +15,4 @@ function About() {
 }
 
 
-export default About;
+export default ResearchGroup;

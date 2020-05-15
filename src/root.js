@@ -6,6 +6,7 @@ import Monitor from "./components/framework/monitor";
 import DatasetLoader from "./components/datasetLoader";
 import Spinner from "./components/framework/spinner";
 import Head from "./components/framework/head";
+import Link from "./components/framework/link";
 import NavBar from "./components/navBar";
 
 const Main = lazy(() => import("./components/main"));
@@ -13,9 +14,31 @@ const About = lazy(() => import("./components/about"));
 const Data = lazy(() => import("./components/data"));
 const Methods = lazy(() => import("./components/methods"));
 const Contact = lazy(() => import("./components/contact"));
+const ResearchGroup = lazy(() => import("./components/researchgroup"));
 const Splash = lazy(() => import("./components/splash"));
 const Status = lazy(() => import("./components/status"));
 const Notifications = lazy(() => import("./components/notifications/notifications"));
+
+const COMPONENT_FOR_URL = {
+  "about":         <About/>,
+  "contact":       <Contact/>,
+  "data-info":     <Data/>,
+  "datasetLoader": <DatasetLoader/>,
+  "main":          <Main/>,
+  "methods":       <Methods/>,
+  "researchgroup": <ResearchGroup/>,
+  "splash":        <Splash/>,
+  "status":        <Status/>,
+};
+
+const COMPONENT_NOT_FOUND = (
+  <div className="container">
+    <h1>Error: page not found</h1>
+    <p>
+      Go <Link url="/">home</Link>
+    </p>
+  </div>
+)
 
 const MainComponentSwitchContainer = styled.div`
   display: flex;
@@ -37,60 +60,16 @@ const ContentContainer = styled.div`
   mobileDisplay: state.browserDimensions.browserDimensions.mobileDisplay,
 }))
 class MainComponentSwitch extends React.Component {
-  renderContent() {
-    // console.log("MainComponentSwitch running (should be infrequent!)", this.props.displayComponent)
-    switch (this.props.displayComponent) {
-      case "main":
-        return (
-          <Suspense fallback={<Spinner/>}>
-            <Main/>
-          </Suspense>
-        );
-      case "splash":
-        return (
-          <Suspense fallback={null}>
-            <Splash/>
-          </Suspense>
-        );
-      case "status":
-        return (
-          <Suspense fallback={<Spinner/>}>
-            <Status/>
-          </Suspense>
-        );
-      case "contact":
-        return (
-          <Suspense fallback={<Spinner/>}>
-            <Contact/>
-          </Suspense>
-        );
-      case "about":
-        return (
-          <Suspense fallback={<Spinner/>}>
-            <About/>
-          </Suspense>
-        );
-      case "data-info":
-        return (
-          <Suspense fallback={<Spinner/>}>
-            <Data/>
-          </Suspense>
-        );
-      case "methods":
-        return (
-          <Suspense fallback={<Spinner/>}>
-            <Methods/>
-          </Suspense>
-        );
-      case "datasetLoader":
-        return (<DatasetLoader/>);
-      default:
-        console.error(`reduxStore.general.displayComponent is invalid (${this.props.displayComponent})`);
-        return (<Splash/>);
-    }
-  }
-
   render() {
+    const isComponentValid = this.props.displayComponent in COMPONENT_FOR_URL
+    const component =
+      isComponentValid ?
+        COMPONENT_FOR_URL[this.props.displayComponent] :
+        COMPONENT_NOT_FOUND
+
+    if (!isComponentValid)
+      console.error(`reduxStore.general.displayComponent is invalid (${this.props.displayComponent})`);
+
     return (
       <MainComponentSwitchContainer>
         <NavBar
@@ -98,11 +77,12 @@ class MainComponentSwitch extends React.Component {
           narrativeTitle={this.props.displayNarrative ? this.props.narrativeTitle : false}
         />
         <ContentContainer>
-          {this.renderContent()}
+          <Suspense fallback={<Spinner/>}>
+            {component}
+          </Suspense>
         </ContentContainer>
       </MainComponentSwitchContainer>
     )
-
   }
 }
 
