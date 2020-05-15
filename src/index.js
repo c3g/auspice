@@ -1,34 +1,29 @@
 /* eslint-disable import/first */
 
-/* POLYFILLS */
+/* P O L Y F I L L S */
 import "./util/polyfills"; // eslint-disable-line
-
-/* LIBRARIES */
+/* L I B R A R I E S */
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-
-/* AUSPICE  IMPORTS */
+/* A U S P I C E   I M P O R T S */
 import configureStore from "./store";
 import { initialiseGoogleAnalyticsIfRequired } from "./util/googleAnalytics";
 import Root from "./root";
-
-/* STYLESHEETS */
+/* S T Y L E S H E E T S */
 import "font-awesome/css/font-awesome.css";
 import "leaflet/dist/leaflet.css";
 import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
+import "./css/global.css";
 import "./css/browserCompatability.css";
 import "./css/bootstrapCustomized.css";
-import "./css/global.scss";
-import "./css/typography.scss";
 import "./css/static.css";
 import "./css/notifications.css";
 import "./css/boxed.css";
 import "./css/select.css";
-import "./css/spinner.scss";
 
 /* FONTS */
-import "typeface-lato"; // eslint-disable-line import/extensions
+import 'typeface-lato'; // eslint-disable-line import/extensions
 
 const store = configureStore();
 
