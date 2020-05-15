@@ -158,112 +158,88 @@ const SplashContent = ({available, dispatch, errorMessage, changePage}) => {
       <Views data={available.datasets}/>
 
       <Title>
-        Partnership
+        {strings.splash.title2}
       </Title>
       <div className='row'>
         <div className='col-md-6'>
           <Subtitle>
-            INSPQ
+            {strings.splash.inspqTitle}
           </Subtitle>
           <Paragraph>
-            The Institut de Santé Publique du Québec (INSPQ, Public Health Institut of Quebec is
-            XXX As a part of INSPQ, the Laboratoire de Santé Publique du Québec (LSPQ, Public
-            Health Laboratory of Quebec) is the reference microbiology laboratory of Québec.
-            LSPQ performs specialised analyses for the diagnostic and the surveillance of
-            infectious diseases
+            {strings.splash.inspqText}
           </Paragraph>
         </div>
         <div className='col-md-6'>
           <Subtitle>
-            McGill Genome Center
+            {strings.splash.centreTitle}
           </Subtitle>
           <Paragraph>
-            MGC is super great and bla bla bla <strong style={{ color: 'red' }}>FIXME</strong>
+            {strings.splash.centreText}
           </Paragraph>
         </div>
       </div>
       <ButtonContainer>
         <a href="#FIXME" className="button">
-          Read more about governance
+          {strings.splash.button2}
         </a>
       </ButtonContainer>
       <Spacer />
 
       <Title id="philosophy">
-        Philosophy
+        {strings.splash.title3}
       </Title>
       <div className="row">
         <div className="col-md-6">
           <Subtitle>
-            Pathogen Phylogenies
+            {strings.splash.pathogenTitle}
           </Subtitle>
           <Paragraph>
-            In the course of an infection and over an epidemic, pathogens naturally accumulate
-            random mutations to their genomes. This is an inevitable consequence of error-prone
-            genome replication. Since different genomes typically pick up different mutations,
-            mutations can be used as a marker of transmission in which closely related genomes
-            indicate closely related infections. By reconstructing a phylogeny we can learn about
-            important epidemiological phenomena such as spatial spread, introduction timings and
-            epidemic growth rate.
+            {strings.splash.pathogenText}
           </Paragraph>
         </div>
         <div className="col-md-6">
           <Subtitle>
-            Actionable Inferences
+            {strings.splash.actionableTitle}
           </Subtitle>
           <Paragraph>
-            However, if pathogen genome sequences are going to inform public health interventions,
-            then analyses have to be rapidly conducted and results widely disseminated.
-            Current scientific publishing practices hinder the rapid dissemination of
-            epidemiologically relevant results. We thought an open online system that
-            implements robust bioinformatic pipelines to synthesize data from across research
-            groups has the best capacity to make epidemiologically actionable inferences.
+            {strings.splash.actionableText}
           </Paragraph>
         </div>
       </div>
       <ButtonContainer>
         <Link url="/methods" className="button">
-          Read more about our workflow and methods
+          {strings.splash.button3}
         </Link>
       </ButtonContainer>
       <div className="row">
         <div className="col-md-6">
           <Subtitle>
-            CoVBanQ
+            {strings.splash.covbanqTitle}
           </Subtitle>
           <Paragraph>
-            The Coronavirus Banq of Quebec is a biobanq of primary clinical specimen collected by
-            Québec hospitals and centralized in INSPQ. Specimen collected are aliquots from
-            nasopharyngeal or oropharyngeal swabs, saliva, broncho-alveolar lavage, expectoration,
-            tissues or feces. Through a targeted sampling strategy, Public Health Authorities
-            prioritize the samples to sequence in order to investigate specific outbreaks.
-            @nextstrain.org.
+            {strings.splash.covbanqText}
           </Paragraph>
         </div>
         <div className="col-md-6">
           <Subtitle>
-            This Website
+            {strings.splash.websiteTitle}
           </Subtitle>
           <Paragraph>
-            This website aims to provide a real-time snapshot of evolving pathogen populations in
-            Québec and to provide interactive data visualizations to virologists, epidemiologists,
-            public health officials and citizen scientists. Through interactive data visualizations,
-            we aim to allow exploration of continually up-to-date datasets, providing a novel
-            surveillance tool to the scientific and public health communities.
+            {strings.splash.websiteText}
           </Paragraph>
         </div>
       </div>
       <Spacer />
 
       <Title>
-        Data sharing
+        {strings.splash.dataTitle}
       </Title>
       <Paragraph>
-        Short bla bla on data sharing policy <strong style={{ color: 'red' }}>FIXME</strong>
+        {strings.splash.dataText}
       </Paragraph>
       <ButtonContainer>
         <Link url="/data-info" className="button">
-          Read more about data sharing
+          {strings.splash.button4}
         </Link>
       </ButtonContainer>
       <Spacer />
