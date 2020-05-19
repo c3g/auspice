@@ -24,7 +24,12 @@ import { timerStart, timerEnd } from "../../util/perf";
 import { tabSingle, darkGrey, lightGrey, goColor, pauseColor } from "../../globalStyles";
 import ErrorBoundary from "../../util/errorBoundry";
 import Legend from "../tree/legend/legend";
-import "../../css/mapbox.css";
+
+const disableFitting = true;
+
+const INITIAL_ZOOM   = 4;
+const INITIAL_CENTER = L.latLng(52.866696, -70.875324);
+
 
 /* global L */
 // L is global in scope and placed by leaflet()
@@ -463,9 +468,6 @@ class Map extends React.Component {
 
   createMap() {
 
-    const zoom = 2;
-    const center = [0, 0];
-
     /* *****************************************
     GET LEAFLET IN THE DOM
     **************************************** */
@@ -473,8 +475,8 @@ class Map extends React.Component {
     L.Map.addInitHook("addHandler", "gestureHandling", GestureHandling);
 
     const map = L.map('map', {
-      center: center,
-      zoom: zoom,
+      center: INITIAL_CENTER,
+      zoom: INITIAL_ZOOM,
       gestureHandling: true,
       maxBounds: this.getInitialBounds(),
       minZoom: 1,
@@ -627,6 +629,8 @@ class Map extends React.Component {
     }
   }
   fitMapBoundsToData(demeData, demeIndices) {
+    if (disableFitting)
+      return;
     const SWNE = this.getGeoRange(demeData, demeIndices);
     // window.L available because leaflet() was called in componentWillMount
     this.state.currentBounds = window.L.latLngBounds(SWNE[0], SWNE[1]);

@@ -19,6 +19,7 @@ import "leaflet/dist/leaflet.css";
 import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
 import "./css/browserCompatability.css";
 import "./css/bootstrapCustomized.css";
+import "./css/mapbox.css";
 import "./css/global.scss";
 import "./css/typography.scss";
 import "./css/static.css";
