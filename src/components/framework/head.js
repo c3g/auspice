@@ -34,7 +34,7 @@ const Head = ({metadata, language}) => {
     },
     defaultNS: 'translation',
     returnObjects: true,
-    postProcess: ['function', 'alsdknfa'],
+    postProcess: 'function',
   });
 
   let pageTitle = "auspice";
