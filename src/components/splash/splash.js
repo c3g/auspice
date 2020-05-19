@@ -116,24 +116,24 @@ const Header = () => (
   </Flex>
 );
 
-const Views = ({data}) => (
-  data ? (
-    <CardContainer>
-      {data.map((d) => (
-        <Card
-          key={d.request}
-          onClick={() => dispatch(changePage({path: d.request, push: true}))}
-        >
-          {d.request}
-        </Card>
-      ))}
-    </CardContainer>
-  ) : (
-    <p>Aucune</p>
-  )
-);
-
 const SplashContent = ({available, dispatch, errorMessage, changePage}) => {
+
+  const Views = ({data}) => (
+    data ? (
+      <CardContainer>
+        {data.map((d) => (
+          <Card
+            key={d.request}
+            onClick={() => dispatch(changePage({path: d.request, push: true}))}
+          >
+            {d.request}
+          </Card>
+        ))}
+      </CardContainer>
+    ) : (
+      <p>Aucune</p>
+    )
+  );
 
   const Content = () => (
     <>
