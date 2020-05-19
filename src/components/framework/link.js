@@ -14,12 +14,28 @@ class Link extends React.Component {
     this.props.changePage({ path: this.props.url })
   }
   render() {
+    if (isExternal(this.props.url)) {
+      const { url, children, ...rest } = this.props;
+      return (
+        <a href={url} {...rest}>
+          {children}
+        </a>
+      );
+    }
+
     return (
       <a href={this.props.url} onClick={this.onClick} className={this.props.className}>
         {this.props.children}
       </a>
     );
   }
+}
+
+function isExternal(url) {
+  try {
+    return new URL(url).hostname !== location.hostname;
+  } catch(e) {}
+  return false;
 }
 
 export default Link;
