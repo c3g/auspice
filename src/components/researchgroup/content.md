@@ -16,7 +16,7 @@
 
 ## McGill Genome Center
 
- - <strong>Ioannis Ragoussis</strong>
+ - Ioannis Ragoussis
  - Sarah Reiling (Nanopore Sequencing)
  - Anne-Marie Roy (Nanopore Sequencing)
  - Shu-Huang Chen(Nanopore Sequencing)
@@ -25,7 +25,7 @@
  - Pierre Lepage (Cleanplex assay/MGI)
 
 
- - <strong>Guillaume Bourque</strong>
+ - Guillaume Bourque
  - Paul Stretenowich (data processing and analysis)
  - Pierre-Olivier Quirion (data processing and phylogenetic analysis)
  - Hector Galvez (data processing and analysis)
