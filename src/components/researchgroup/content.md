@@ -1,4 +1,4 @@
-[CoVSeQ](https://github.com/c3g/auspice/blob/master/src/images/covSeqLogo.png)
+![CoVSeQ](https://github.com/c3g/auspice/blob/master/src/images/covSeqLogo.png)
 
 # CoVSeQ research group
 
