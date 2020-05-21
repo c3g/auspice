@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import { brandColor } from "../../globalStyles"
 import { normalNavBarHeight } from "../../util/globals"
+import Language from "./language";
 
 const logoPNG = require("../../images/VisuelCoronavirus-ms.jpg");
 
@@ -97,6 +98,9 @@ export const AuspiceNavBar = ({narrativeTitle, width, changePage}) => {
         )
       }
 
+      <div style={{ flex: '1' }} />
+
+      <Language />
     </AuspiceNavBarContainer>
   );
 };

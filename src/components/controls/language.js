@@ -21,16 +21,16 @@ class Language extends React.Component {
     i18n.changeLanguage(this.props.language);
   }
 
-  getlanguageOptions() {
+  getLanguageOptions() {
     const languages = [
       {value: "fr", label: "Français"},
-      {value: "de", label: "Deutsch"},
+      // {value: "de", label: "Deutsch"},
       {value: "en", label: "English"},
-      {value: "es", label: "Español"},
-      {value: "ru", label: "Русский"},
-      {value: "lt", label: "Lietuvių"},
-      {value: "pt", label: "Português"},
-      {value: "ja", label: "日本語"}
+      // {value: "es", label: "Español"},
+      // {value: "ru", label: "Русский"},
+      // {value: "lt", label: "Lietuvių"},
+      // {value: "pt", label: "Português"},
+      // {value: "ja", label: "日本語"}
     ];
     return languages;
   }
@@ -53,7 +53,7 @@ class Language extends React.Component {
             name="selectLanguage"
             id="selectLanguage"
             value={this.props.language}
-            options={this.getlanguageOptions()}
+            options={this.getLanguageOptions()}
             clearable={false}
             searchable={false}
             multi={false}

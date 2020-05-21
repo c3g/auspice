@@ -5,14 +5,26 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import { hasExtension, getExtension } from "../../util/extensions";
 
-const Head = ({metadata, general}) => {
-  const lang = general.language;
+import resources from "../../locales/index.js";
+
+const functionProcessor = {
+  name: 'function',
+  type: 'postProcessor',
+  process: (value, key, options) => {
+    if (typeof value === 'function')
+      return value()
+    return value
+  }
+}
+
+const Head = ({metadata, language}) => {
 
   i18n
   .use(initReactI18next)
+  .use(functionProcessor)
   .init({
-    resources: require("i18next-resource-store-loader!../../locales/index.js"), // eslint-disable-line
-    lng: lang,
+    resources: resources,
+    lng: language,
     fallbackLng: "en",
     /* To debug any errors w.r.t. i18n, swith the second `false` to `true`
     (and this can be kept even after deployment if needed) */
@@ -20,7 +32,9 @@ const Head = ({metadata, general}) => {
     interpolation: {
       escapeValue: false
     },
-    defaultNS: 'translation'
+    defaultNS: 'translation',
+    returnObjects: true,
+    postProcess: 'function',
   });
 
   let pageTitle = "auspice";
@@ -54,6 +68,6 @@ export default connect(
   (state) => ({
     pathname: state.general.pathname,
     metadata: state.metadata,
-    general: state.general
+    language: state.language
   })
 )(Head);
