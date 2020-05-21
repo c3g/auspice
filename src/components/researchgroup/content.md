@@ -1,3 +1,4 @@
+[CoVSeQ](../../images/covSeqLogo.png)
 
 # CoVSeQ research group
 
@@ -8,7 +9,7 @@
 
  - Sandrine Moreira, Head of Genomics and Bioinformatics, Coordinator of CoVSeQ initiative
  - Michel Roger, Medical director, Coordinator of CoVSeQ initiative
- - Eric Fournier, bioinformatician,
+ - Eric Fournier, bioinformatician, Phylogenetic Analysis
  - Réjean Dion, Medical epidemiologist
  - Hugues Charest, Head of Respiratory Virus department
 
@@ -16,25 +17,24 @@
 
 ## McGill Genome Center
 
- - Ioannis Ragoussis
- - Sarah Reiling (Nanopore Sequencing)
- - Anne-Marie Roy (Nanopore Sequencing)
- - Shu-Huang Chen(Nanopore Sequencing)
- - Janick St-Cyr (Cleanplex assay/MGI)
- - Patrick Willet (Cleanplex assay/MGI)
- - Pierre Lepage (Cleanplex assay/MGI)
+ - Prof. Ioannis Ragoussis, Head of Genome Science  
+ - Sarah Reiling, Research Associate, ARTIC protocol / Nanopore Sequencing
+ - Anne-Marie Roy, Research Assistant, Nanopore Sequencing
+ - Shu-Huang Chen, Research Assistant, Nanopore Sequencing
+ - Pierre Lepage, Academic Associate, Cleanplex assay / MGI / Illumina
+ - Janick St-Cyr, Sequencing Laboratory Manager, Cleanplex assay / MGI / Illumina
+ - Patrick Willet Research Technician Cleanplex assay / MGI / Illumina
 
 
- - Guillaume Bourque
- - Paul Stretenowich (data processing and analysis)
- - Pierre-Olivier Quirion (data processing and phylogenetic analysis)
- - Hector Galvez (data processing and analysis)
- - Edouard Henrion (data processing and analysis)
- - Mathieu Bourgey (data processing and analysis)
- - Romain Gregoire (website)
- - David Bujold (website and metadata organization)
+ - Prof. Guillaume Bourque, Director of Bioinformatics
+ - Mathieu Bourgey, R&D Bioinformatics Manager, Data Processing and Analysis / Management
+ - David Bujold, Data Bioinformatics Manager, Website and Metadata Organization
+ - Hector Galvez, Bioinformatics specialist, Data Processing and Analysis
+ - Paul Stretenowich, Bioinformatics Consultant, Data Processing and Analysis
+ - Pierre-Olivier Quirion, HPC specialist, Data Processing and Phylogenetic Analysis
+ - Romain Gregoire, Software Developer, Website
 
 
- - <strong>Jesse Shapiro</strong>
- - <strong>Carmen Lia Murall</strong>
- - <strong>Julie Marleau</strong>
+ - Jesse Shapiro, Associate Professor
+ - Carmen Lia Murall, Post-Doctoral Fellow, Phylogenetic Analysis
+ - Julie Marleau, Research Assistant, Sequencing and Phylogenetic Analysis
