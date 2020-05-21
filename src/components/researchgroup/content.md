@@ -1,4 +1,4 @@
-[CoVSeQ](../../images/covSeqLogo.png)
+[CoVSeQ](https://github.com/c3g/auspice/blob/master/src/images/covSeqLogo.png)
 
 # CoVSeQ research group
 
@@ -35,6 +35,7 @@
  - Romain Gregoire, Software Developer, Website
 
 <br/>
+
  - Jesse Shapiro, Associate Professor
  - Carmen Lia Murall, Post-Doctoral Fellow, Phylogenetic Analysis
  - Julie Marleau, Research Assistant, Sequencing and Phylogenetic Analysis
