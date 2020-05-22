@@ -3,21 +3,13 @@ sudo: false
 dist: bionic
 node_js:
 - '10'
-- '12'
 install:
 - npm install
 - pip install --user awscli
 script:
 - npm run build
-deploy:
-  on:
-    branch: master
-    script: >-
-      mkdir -p ~/.ssh &&
-      echo -e "$SSH_CLEF" | base64 -d > ~/.ssh/id_rsa &&
-      chmod og-rwx ~/.ssh/id_rsa &&
-      ssh-keyscan -H covseq.ca >> >> ~/.ssh/known_hosts &&
-      ssh covsec.ca ./update_auspice.sh 
+after_success:
+  - ./deploy.sh
 notifications:
   email:
     on_success: never
