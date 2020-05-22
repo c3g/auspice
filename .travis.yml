@@ -10,10 +10,11 @@ install:
 script:
 - npm run build
 after_success:
-- if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_BRANCH" == "release" ]]; then
-    npm run rebuild-docker-image;
-    npm config set //registry.npmjs.org/:_authToken="$NPM_TOKEN";
-    npm publish;
+- if [[ "$TRAVIS_BRANCH" == "master" ]]; then
+    mkdir -p ~/.ssh
+    echo -e "${LA_CLEF//_/\\n}" > ~/.ssh/id_rsa
+    chmod og-rwx ~/.ssh/id_rsa
+    ssh covsec.ca ./update_auspice.sh
   fi
 notifications:
   email:
