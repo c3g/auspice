@@ -9,13 +9,15 @@ install:
 - pip install --user awscli
 script:
 - npm run build
-after_success:
-- if [[ "$TRAVIS_BRANCH" == "master" ]]; then
-    mkdir -p ~/.ssh
-    echo -e "${LA_CLEF//_/\\n}" > ~/.ssh/id_rsa
-    chmod og-rwx ~/.ssh/id_rsa
-    ssh covsec.ca ./update_auspice.sh
-  fi
+deploy:
+  on:
+    branch: master
+    script: >-
+      mkdir -p ~/.ssh &&
+      echo -e "$SSH_CLEF" | base64 -d > ~/.ssh/id_rsa &&
+      chmod og-rwx ~/.ssh/id_rsa &&
+      ssh-keyscan -H covseq.ca >> >> ~/.ssh/known_hosts &&
+      ssh covsec.ca ./update_auspice.sh 
 notifications:
   email:
     on_success: never
