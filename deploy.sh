@@ -4,5 +4,5 @@ if [ "$TRAVIS_BRANCH" == "master" ]; then
   echo -e "$SSH_CLEF" | base64 -d > ~/.ssh/id_rsa 
   chmod og-rwx ~/.ssh/id_rsa 
   ssh-keyscan -H covseq.ca >> ~/.ssh/known_hosts 
-  ssh covsec.ca ./update_auspice.sh 
+  ssh covseq.ca ./update_auspice.sh 
 fi
