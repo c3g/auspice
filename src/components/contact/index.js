@@ -1,13 +1,18 @@
 import React from "react";
-import content from "./content.md";
+import { withTranslation } from "react-i18next";
+import Footer from "../../components/footer";
 
-function Contact() {
+function Contact({ t }) {
   return (
-    <div
-      className="static container markdown"
-      dangerouslySetInnerHTML={{ __html: content }}
-    />
+    <>
+      <div
+        className="static container markdown"
+        dangerouslySetInnerHTML={t('contact:content')}
+      />
+      <Footer />
+    </>
   )
 }
 
-export default Contact;
+
+export default withTranslation()(Contact);
