@@ -3,10 +3,10 @@ import React from "react";
 import { connect } from "react-redux";
 import styled from 'styled-components';
 import { normalNavBarHeight } from "../../util/globals";
-import { AuspiceNavBar } from "./content";
 import { hasExtension, getExtension } from "../../util/extensions";
 import { sidebarTheme } from "../../components/main/styles";
 import { changePage } from "../../actions/navigation";
+import AuspiceNavBar from "./content";
 
 const NavBarContainer = styled.div`
   flex: 0 0 auto;

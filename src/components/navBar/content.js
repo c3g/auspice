@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import { withTranslation } from "react-i18next";
 import { brandColor } from "../../globalStyles"
 import { normalNavBarHeight } from "../../util/globals"
 import Language from "./language";
@@ -59,14 +60,13 @@ const PageLink = styled.a`
 `
 
 const links = [
-  { name: "Accueil",  path: "/" },
-  { name: "À propos", path: "/about" },
-  { name: "Données",  path: "/data-info" },
-  { name: "Méthodes", path: "/methods" },
-  { name: "Contact",  path: "/contact" },
+  { name: "Home",    path: "/" },
+  { name: "About",   path: "/about" },
+  { name: "Data",    path: "/data-info" },
+  { name: "Methods", path: "/methods" },
+  { name: "Contact", path: "/contact" },
 ]
-
-export const AuspiceNavBar = ({narrativeTitle, width, changePage}) => {
+const AuspiceNavBar = ({narrativeTitle, width, changePage, t}) => {
   return (
     <AuspiceNavBarContainer>
       <LogoLink href="/">
@@ -93,7 +93,7 @@ export const AuspiceNavBar = ({narrativeTitle, width, changePage}) => {
             href={link.path}
             onClick={preventDefault(changePage, { path: link.path })}
           >
-            {link.name}
+            {t(`navbar:${link.name}`)}
           </PageLink>
         )
       }
@@ -104,6 +104,8 @@ export const AuspiceNavBar = ({narrativeTitle, width, changePage}) => {
     </AuspiceNavBarContainer>
   );
 };
+
+export default withTranslation()(AuspiceNavBar)
 
 function preventDefault(fn, ...args) {
   return (ev) => {
