@@ -139,7 +139,7 @@ const SplashContent = ({available, dispatch, errorMessage, changePage, t}) => {
   const Content = () => (
     <>
 
-      <Title>
+      <Title style={{ maxWidth: 800, margin: '0 auto 0.5em', lineHeight: 1.2 }}>
         {t('splash:title1')}
       </Title>
       <Paragraph className="text-center" style={{ maxWidth: 640, margin: 'auto' }}>
@@ -158,31 +158,11 @@ const SplashContent = ({available, dispatch, errorMessage, changePage, t}) => {
       <Views data={available.datasets}/>
 
       <Title>
-        {t('splash:title2')}
+        {t('splash:websiteTitle')}
       </Title>
-      <div className='row'>
-        <div className='col-md-6'>
-          <Subtitle>
-            {t('splash:inspqTitle')}
-          </Subtitle>
-          <Paragraph>
-            {t('splash:inspqText')}
-          </Paragraph>
-        </div>
-        <div className='col-md-6'>
-          <Subtitle>
-            {t('splash:centreTitle')}
-          </Subtitle>
-          <Paragraph>
-            {t('splash:centreText')}
-          </Paragraph>
-        </div>
-      </div>
-      <ButtonContainer>
-        <a href="#FIXME" className="button">
-          {t('splash:button2')}
-        </a>
-      </ButtonContainer>
+      <Paragraph>
+        {t('splash:websiteText')}
+      </Paragraph>
       <Spacer />
 
       <Title id="philosophy">
@@ -211,38 +191,6 @@ const SplashContent = ({available, dispatch, errorMessage, changePage, t}) => {
           {t('splash:button3')}
         </Link>
       </ButtonContainer>
-      <div className="row">
-        <div className="col-md-6">
-          <Subtitle>
-            {t('splash:covbanqTitle')}
-          </Subtitle>
-          <Paragraph>
-            {t('splash:covbanqText')}
-          </Paragraph>
-        </div>
-        <div className="col-md-6">
-          <Subtitle>
-            {t('splash:websiteTitle')}
-          </Subtitle>
-          <Paragraph>
-            {t('splash:websiteText')}
-          </Paragraph>
-        </div>
-      </div>
-      <Spacer />
-
-      <Title>
-        {t('splash:dataTitle')}
-      </Title>
-      <Paragraph>
-        {t('splash:dataText')}
-      </Paragraph>
-      <ButtonContainer>
-        <Link url="/data-info" className="button">
-          {t('splash:button4')}
-        </Link>
-      </ButtonContainer>
-      <Spacer />
 
     </>
   );

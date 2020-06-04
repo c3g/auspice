@@ -5,50 +5,28 @@ import Link from "../../components/framework/link";
 export default {
   none: "Aucune",
 
-  /* TRANSLATE BELOW */
-
-  title1: "[FR] Real-time tracking of Quebec SARS-CoV-2 evolution",
+  title1: "Surveillance en temps réel de l’évolution des SARS-CoV-2 au Québec",
   subtitle1: () => <>
-    CoVSeQ is a partnership between
-    the <Link url="">Institut National de Santé Publique du Québec (INSPQ)</Link> and
-    the <Link url="">McGill Genome Center</Link> to sequence the viral genome of Quebec
-    patients with COVID-19 disease. The viral samples are taken from a Quebec viral
-    biobank, termed the CoVBanQ, which is hosted in
-    the <Link url="">Laboratoire de Santé Publique du Québec (LSPQ)</Link>.
-    The website is based on <Link url="">Nextstrain</Link>, an open-source project to
-    harness the scientific and public health potential of pathogen genome data. It
-    provides powerful analytic and visualization tools to aid epidemiological
-    understanding and improve outbreak response.
+    CoVSeQ est un partenariat entre 
+    l’<Link url="https://www.inspq.qc.ca/">Institut National de Santé Publique du Québec (INSPQ)</Link> et
+    Le <Link url="http://www.mcgillgenomecentre.org/">Centre Génomique de McGill </Link> pour le séquençage du génome viral de patients malade de la COVID-19. Les échantillons viraux proviennent de la biobanque virale du Québec (CoVBanQ) hébergée au <Link url="https://www.inspq.qc.ca/lspq">Laboratoire de Santé Publique du Québec (LSPQ)</Link>.
+    Ce site web est basé sur <Link url="https://nextstrain.org/">Nextstrain</Link>, un projet <i>open-source</i> permettant d’exploiter le potentiel scientifique et pour la santé publique des données génomiques de pathogènes. Il propose un environnement puissant pour l’analyse et la visualisation de données génomiques permettant une meilleure compréhension de la situation épidémiologique et une meilleure réponse aux éclosions.
   </>,
   button1: "En savoir plus",
 
   availableViews: "Vues disponibles",
 
-  title2: "Partnership",
-  inspqTitle: "INSPQ",
-  inspqText: () => <>
-    The Institut de Santé Publique du Québec (INSPQ, Public Health Institut of Quebec is
-    XXX As a part of INSPQ, the Laboratoire de Santé Publique du Québec (LSPQ, Public
-    Health Laboratory of Quebec) is the reference microbiology laboratory of Québec.
-    LSPQ performs specialised analyses for the diagnostic and the surveillance of
-    infectious diseases
+  websiteTitle: "Ce site web",
+  websiteText: () => <>
+    Ce site web donne un aperçu en temps réel de l’évolution de la population de SRAS-CoV-2 au Québec et propose une visualisation interactive des données pour les virologistes, les épidémiologistes, les professionnels de santé publique et les scientifiques. Grace à ces fonctionnalités avancées, nous souhaitons faciliter l’exploration des données au fur et à mesure de leur mise à jour et proposer un nouvel outil de surveillance pour les autorités de santé publique et la communauté scientifique.
   </>,
-  centreTitle: "McGill Genome Center",
-  centreText: () => <>
-    MGC is super great and bla bla bla <strong style={{ color: 'red' }}>FIXME</strong>
-  </>,
-  button2: "Read more about governance",
 
-  title3: "Philosophy",
-  pathogenTitle: "Pathogen Phylogenies",
+
+  title3: "Philosophie",
+  pathogenTitle: "Phylogénie des pathogens",
   pathogenText: () => <>
-    In the course of an infection and over an epidemic, pathogens naturally accumulate
-    random mutations to their genomes. This is an inevitable consequence of error-prone
-    genome replication. Since different genomes typically pick up different mutations,
-    mutations can be used as a marker of transmission in which closely related genomes
-    indicate closely related infections. By reconstructing a phylogeny we can learn about
-    important epidemiological phenomena such as spatial spread, introduction timings and
-    epidemic growth rate.
+   Au cours d’une infection, les pathogènes accumulent naturellement des mutations dans leurs génomes. Ceci est une conséquence inévitable de la réplication imparfaite de leur génome. Comme les erreurs vont être différentes d’une fois à l’autre, ceci sera utilisé comme un marqueur de la transmission car des  génomes aux séquences proches (avec peu de mutations de différence) révèlent des infections reliées. En reconstruisant la phylogénie (le lien de parenté entre les virus), nous pouvons ainsi détecter des phénomènes épidémiologiques tels que la diffusion géographique des isolats, dater leur introduction et mesurer la croissance de l’épidémie.
+   Text issue de Nextstrains.
   </>,
   actionableTitle: "Actionable Inferences",
   actionableText: () => <>
@@ -59,31 +37,6 @@ export default {
     implements robust bioinformatic pipelines to synthesize data from across research
     groups has the best capacity to make epidemiologically actionable inferences.
   </>,
-  button3: "Read more about our workflow and methods",
-  covbanqTitle: "CoVBanQ",
-  covbanqText: () => <>
-    The Coronavirus Banq of Quebec is a biobanq of primary clinical specimen collected by
-    Québec hospitals and centralized in INSPQ. Specimen collected are aliquots from
-    nasopharyngeal or oropharyngeal swabs, saliva, broncho-alveolar lavage, expectoration,
-    tissues or feces. Through a targeted sampling strategy, Public Health Authorities
-    prioritize the samples to sequence in order to investigate specific outbreaks.
-    @nextstrain.org.
-  </>,
-  websiteTitle: "This Website",
-  websiteText: () => <>
-    This website aims to provide a real-time snapshot of evolving pathogen populations in
-    Québec and to provide interactive data visualizations to virologists, epidemiologists,
-    public health officials and citizen scientists. Through interactive data visualizations,
-    we aim to allow exploration of continually up-to-date datasets, providing a novel
-    surveillance tool to the scientific and public health communities.
-  </>,
+  button3: "Read more about our workflow",
 
-  dataTitle: "Data sharing",
-  dataText: () => <>
-    Short bla bla on data sharing policy <strong style={{ color: 'red' }}>FIXME</strong>
-  </>,
-
-  button4: "Read more about data sharing",
-
-  /* TRANSLATE ABOVE */
 };
