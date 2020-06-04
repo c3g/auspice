@@ -17,25 +17,30 @@ const functionProcessor = {
   }
 }
 
+let didInit = false
+
 const Head = ({metadata, language}) => {
 
-  i18n
-  .use(initReactI18next)
-  .use(functionProcessor)
-  .init({
-    resources: resources,
-    lng: language,
-    fallbackLng: "en",
-    /* To debug any errors w.r.t. i18n, swith the second `false` to `true`
-    (and this can be kept even after deployment if needed) */
-    debug: process.env.NODE_ENV === 'production' ? false : false, // eslint-disable-line
-    interpolation: {
-      escapeValue: false
-    },
-    defaultNS: 'translation',
-    returnObjects: true,
-    postProcess: 'function',
-  });
+  if (!didInit) {
+    i18n
+    .use(initReactI18next)
+    .use(functionProcessor)
+    .init({
+      resources: resources,
+      lng: language,
+      fallbackLng: "en",
+      /* To debug any errors w.r.t. i18n, swith the second `false` to `true`
+      (and this can be kept even after deployment if needed) */
+      debug: process.env.NODE_ENV === 'production' ? false : false, // eslint-disable-line
+      interpolation: {
+        escapeValue: false
+      },
+      defaultNS: 'translation',
+      returnObjects: true,
+      postProcess: 'function',
+    });
+    didInit = true;
+  }
 
   let pageTitle = "auspice";
   if (hasExtension("browserTitle")) {
@@ -67,7 +72,7 @@ of in state. This allows us to detect changes such as redirects such as /flu/avi
 export default connect(
   (state) => ({
     pathname: state.general.pathname,
+    language: state.general.language,
     metadata: state.metadata,
-    language: state.language
   })
 )(Head);
