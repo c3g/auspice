@@ -1,13 +1,13 @@
 import React from "react";
-import content from "./content.md";
+import { withTranslation } from "react-i18next";
 import Footer from "../../components/footer";
 
-function About() {
+function About({ t }) {
   return (
     <>
       <div
         className="static container markdown"
-        dangerouslySetInnerHTML={{ __html: content }}
+        dangerouslySetInnerHTML={t('about:content')}
       />
       <Footer />
     </>
@@ -15,4 +15,4 @@ function About() {
 }
 
 
-export default About;
+export default withTranslation()(About);
