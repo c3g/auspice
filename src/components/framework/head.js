@@ -42,7 +42,7 @@ const Head = ({metadata, language}) => {
     didInit = true;
   }
 
-  let pageTitle = "auspice";
+  let pageTitle = "CoVSeQ";
   if (hasExtension("browserTitle")) {
     pageTitle = getExtension("browserTitle");
   }
