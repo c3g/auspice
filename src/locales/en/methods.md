@@ -14,7 +14,9 @@ Under Construction
 <hr/>
 
 ### Workflow
-https://drive.google.com/file/d/13owHK3Xe9kodm_ocXfBWyFJ2SDgcA1gZ/view?usp=sharing
+<div class="text-center">
+  <img height="600" src="../../images/CoVSeQ-CoVBanQ-CanCOGen.jpg" alt="CoVSeQ Workflow" />
+</div>
 
 
 ### Sequencing Methods
