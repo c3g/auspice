@@ -6,15 +6,17 @@ le Ministère de la santé et des services sociaux du Québec.
 
 
 ### Table of contents:
+!!!! Peux-tu mettre les ancres correctement, je ne sais pas comment faire. Merci !
 
-- [<a href="https://www.inspq.qc.ca/">Laboratoire de Santé Publique du Québec, INSPQ</a>](#inspq)
-- [<a href="https://www.umontreal.ca/">Université de Montréal</a>] (#udem)
-- [<a href="http://www.mcgillgenomecentre.org/">McGill Genome Center</a>] (#mgc)
-- [<a href="http://www.computationalgenomics.ca/">C3G</a>]  (#c3g)
-- [<a href="https://www.calculquebec.ca/">Calcul Québec</a>]  (#cq)
-- [<a href="https://www.mcgill.ca/">U. McGill</a>]  (#umcg)
+- [Laboratoire de Santé Publique du Québec, INSPQ](#inspq)
+- [Université de Montréal] (#udem)
+- [McGill Genome Center] (#mgc)
+- [C3G]  (#c3g)
+- [Calcul Québec]  (#cq)
+- [Université McGill]  (#umcg)
+- [Génome Québec] (#GQ)
 
-Ajouter ici image CoVSeQ-CoVBanQ_Team.jpg
+!!!!! Ajouter ici image CoVSeQ-CoVBanQ_Team.jpg. Merci !
 
 
 ## Laboratoire de Santé Publique du Québec (LSPQ) - INSPQ
@@ -22,7 +24,6 @@ Ajouter ici image CoVSeQ-CoVBanQ_Team.jpg
 
 L’Institut de Santé Publique du Québec (INSPQ, Public Health Institut of Quebec) est un centre d'expertise et de référence en matière de santé publique au Québec. Notre mision est de soutenir le Ministère de la Santé et des Services Sociaux, les autorités régionales de santé publique et les services sociaux dans leurs responsabilité en matière de santé publique en apportant notre expertise et des services spécialisés de laboratoire et de dépistage. Notre objectif est d'améliorer l'état de santé et le bien-être de la population. Au sein de l’INSPQ, le Laboratoire de Santé Publique du Québec (LSPQ) est le laboratoire de référence pour la microbiologie. Le LSPQ réalise des analyses spécialisées pour le diagnostique et la surveillance des maladies infectieuses.
   
-La banque des Coronavirus du Québec est une biobanque d’échantillons cliniques de patients positifs pour la COVID-19 collectés par les hôpitaux du Québec et hébergés par le LSPQ. Les échantillons collectés sont majoritairement des aliquots de prélèvements nasopharyngés ou oropharyngés, de la salive, des lavages broncho-alvéolaires, des expectorations, des tissus ou des selles. 
 
 <ul>
 <li>  Michel Roger, Directeur Medical </li>
@@ -72,5 +73,8 @@ La banque des Coronavirus du Québec est une biobanque d’échantillons cliniqu
 <li>  Pierre-Olivier Quirion, HPC analyst </li>
 </ul>
 </ul>
+
+## Génome Québec
+La banque des Coronavirus du Québec (CoVBanQ) est une biobanque d’échantillons cliniques de patients positifs pour la COVID-19 collectés par les hôpitaux du Québec et hébergés par Génome Québec. Les échantillons collectés sont majoritairement des aliquots de prélèvements nasopharyngés ou oropharyngés, de la salive, des lavages broncho-alvéolaires, des expectorations, des tissus ou des selles. 
 
 
