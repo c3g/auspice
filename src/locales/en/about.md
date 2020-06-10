@@ -6,20 +6,20 @@ the Ministere de la santé et des services sociaux du Québec.
 
 
 ### Table of contents:
-!!!! Peux-tu mettre les ancres correctement, je ne sais pas comment faire. Merci !
 
 - [Laboratoire de Santé Publique du Québec, INSPQ](#inspq)
-- [Université de Montréal] (#udem)
-- [McGill Genome Center] (#mgc)
-- [C3G]  (#c3g)
-- [Calcul Québec]  (#cq)
-- [Université McGill]  (#umcg)
-- [Génome Québec] (#GQ)
+- [Université de Montréal](#udem)
+- [McGill Genome Center](#mgc)
+- [C3G](#c3g)
+- [Calcul Québec](#cq)
+- [Université McGill](#umcg)
+- [Génome Québec](#gq)
 
-!!!!! Ajouter ici image CoVSeQ-CoVBanQ_Team.jpg. Merci !
+<div class="text-center">
+  <img height="400" src="../../images/CoVSeQ-CoVBanQ_Team.jpg" alt="covseq covbanq team" />
+</div>
 
-
-## Public Health Laboratory of Quebec (LSPQ) - INSPQ
+## <a name="inspq"></a>Public Health Laboratory of Quebec (LSPQ) - INSPQ
 <a href="https://www.inspq.qc.ca/">INSPQ</a>
 
 <a href="https://www.inspq.qc.ca/">INSPQ</a> and <a href="https://www.inspq.qc.ca/lspq">LSPQ</a>
@@ -38,7 +38,7 @@ infectious diseases
 </ul>
 
 
-## Université de Montréal
+## <a name="udem"></a>Université de Montréal
 <a href="https://www.umontreal.ca/">UdeM</a>  
 
 <ul>
@@ -49,7 +49,7 @@ infectious diseases
 
 
 
-## McGill Genome Center
+## <a name="mgc"></a>McGill Genome Center
 <a href="http://www.mcgillgenomecentre.org/">McGill Genome Center</a>  
 
 <ul>
@@ -60,7 +60,7 @@ infectious diseases
 <li>  Prof. Guillaume Bourque, Head of Bioinformatics </li>
 </ul>
 
-## C3G
+## <a name="c3g"></a>C3G
 <a href="http://www.computationalgenomics.ca/">C3G</a>  
 
 <ul>
@@ -71,7 +71,7 @@ infectious diseases
 <li>  Pierre-Olivier Quirion, HPC specialist  </li>
 </ul>
 
-## Calcul Québec
+## <a name="cq"></a>Calcul Québec
 <a href="https://www.calculquebec.ca/">Calcul Québec</a>  
 
 <ul>
@@ -79,7 +79,7 @@ infectious diseases
 </ul>
 </ul>
 
-## Génome Québec
+## <a name="gq"></a>Génome Québec
 <a href="http://www.genomequebec.com/">Génome Québec</a>
 
 The Coronavirus Banq of Quebec (CoVBanQ) is a biobanq of primary clinical specimen from COVID-19 positives patients collected by

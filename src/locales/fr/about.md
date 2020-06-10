@@ -6,20 +6,21 @@ le Ministère de la santé et des services sociaux du Québec.
 
 
 ### Table of contents:
-!!!! Peux-tu mettre les ancres correctement, je ne sais pas comment faire. Merci !
 
 - [Laboratoire de Santé Publique du Québec, INSPQ](#inspq)
-- [Université de Montréal] (#udem)
-- [McGill Genome Center] (#mgc)
-- [C3G]  (#c3g)
-- [Calcul Québec]  (#cq)
-- [Université McGill]  (#umcg)
-- [Génome Québec] (#GQ)
+- [Université de Montréal](#udem)
+- [McGill Genome Center](#mgc)
+- [C3G](#c3g)
+- [Calcul Québec](#cq)
+- [Université McGill](#umcg)
+- [Génome Québec](#gq)
 
-!!!!! Ajouter ici image CoVSeQ-CoVBanQ_Team.jpg. Merci !
+<div class="text-center">
+  <img height="400" src="../../images/CoVSeQ-CoVBanQ_Team.jpg" alt="covseq covbanq team" />
+</div>
 
 
-## Laboratoire de Santé Publique du Québec (LSPQ) - INSPQ
+## <a name="inspq"></a>Laboratoire de Santé Publique du Québec (LSPQ) - INSPQ
 <a href="https://www.inspq.qc.ca/">INSPQ</a>
 
 L’Institut de Santé Publique du Québec (INSPQ, Public Health Institut of Quebec) est un centre d'expertise et de référence en matière de santé publique au Québec. Notre mision est de soutenir le Ministère de la Santé et des Services Sociaux, les autorités régionales de santé publique et les services sociaux dans leurs responsabilité en matière de santé publique en apportant notre expertise et des services spécialisés de laboratoire et de dépistage. Notre objectif est d'améliorer l'état de santé et le bien-être de la population. Au sein de l’INSPQ, le Laboratoire de Santé Publique du Québec (LSPQ) est le laboratoire de référence pour la microbiologie. Le LSPQ réalise des analyses spécialisées pour le diagnostique et la surveillance des maladies infectieuses.
@@ -33,7 +34,7 @@ L’Institut de Santé Publique du Québec (INSPQ, Public Health Institut of Que
 <li>  Eric Fournier, Bioinformaticien</li>
 </ul>
 
-## Université de Montréal
+## <a name="udem"></a>Université de Montréal
 <a href="https://www.umontreal.ca/">UdeM</a>  
 
 <ul>
@@ -44,7 +45,7 @@ L’Institut de Santé Publique du Québec (INSPQ, Public Health Institut of Que
 
 
 
-## McGill Genome Center
+## <a name="mgc"></a>McGill Genome Center
 <a href="http://www.mcgillgenomecentre.org/">McGill Genome Center</a>  
 
 <ul>
@@ -55,7 +56,7 @@ L’Institut de Santé Publique du Québec (INSPQ, Public Health Institut of Que
 <li>  Prof. Guillaume Bourque, Head of Bioinformatics </li>
 </ul>
 
-## C3G
+## <a name="c3g"></a>C3G
 <a href="http://www.computationalgenomics.ca/">C3G</a>  
 
 <ul>
@@ -66,7 +67,7 @@ L’Institut de Santé Publique du Québec (INSPQ, Public Health Institut of Que
 <li>  Pierre-Olivier Quirion, HPC specialist  </li>
 </ul>
 
-## Calcul Québec
+## <a name="cq"></a>Calcul Québec
 <a href="https://www.calculquebec.ca/">Calcul Québec</a>  
 
 <ul>
@@ -74,7 +75,7 @@ L’Institut de Santé Publique du Québec (INSPQ, Public Health Institut of Que
 </ul>
 </ul>
 
-## Génome Québec
+## <a name="gq"></a>Génome Québec
 <a href="http://www.genomequebec.com/">Génome Québec</a>
 La banque des Coronavirus du Québec (CoVBanQ) est une biobanque d’échantillons cliniques de patients positifs pour la COVID-19 collectés par les hôpitaux du Québec et hébergés par Génome Québec. Les échantillons collectés sont majoritairement des aliquots de prélèvements nasopharyngés ou oropharyngés, de la salive, des lavages broncho-alvéolaires, des expectorations, des tissus ou des selles. 
 
