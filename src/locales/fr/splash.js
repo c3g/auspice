@@ -25,18 +25,24 @@ export default {
   title3: "Philosophie",
   pathogenTitle: "Phylogénie des pathogens",
   pathogenText: () => <>
-   Au cours d’une infection, les pathogènes accumulent naturellement des mutations dans leurs génomes. Ceci est une conséquence inévitable de la réplication imparfaite de leur génome. Comme les erreurs vont être différentes d’une fois à l’autre, ceci sera utilisé comme un marqueur de la transmission car des  génomes aux séquences proches (avec peu de mutations de différence) révèlent des infections reliées. En reconstruisant la phylogénie (le lien de parenté entre les virus), nous pouvons ainsi détecter des phénomènes épidémiologiques tels que la diffusion géographique des isolats, dater leur introduction et mesurer la croissance de l’épidémie.
-   Text issue de Nextstrains.
+  "Au cours d’une infection, les pathogènes accumulent naturellement des mutations dans leurs génomes. 
+  Ceci est une conséquence inévitable de la réplication imparfaite de leur génome. 
+  Comme les erreurs vont être différentes d’une fois à l’autre, ceci sera utilisé comme un marqueur de la transmission 
+  car des  génomes aux séquences proches (avec peu de mutations de différence) révèlent des infections reliées. 
+  En reconstruisant la phylogénie (le lien de parenté entre les virus), 
+  nous pouvons ainsi détecter des phénomènes épidémiologiques tels que la diffusion géographique des isolats, 
+  dater leur introduction et mesurer la croissance de l’épidémie."
+   Traduction d'un texte issu de Nextstrains.
   </>,
-  actionableTitle: "Actionable Inferences",
+  actionableTitle: "De l'inférence à l'action",
   actionableText: () => <>
-    However, if pathogen genome sequences are going to inform public health interventions,
-    then analyses have to be rapidly conducted and results widely disseminated.
-    Current scientific publishing practices hinder the rapid dissemination of
-    epidemiologically relevant results. We thought an open online system that
-    implements robust bioinformatic pipelines to synthesize data from across research
-    groups has the best capacity to make epidemiologically actionable inferences.
+    "Pour que la séquence génomique des pathogènes puisse guider les interventions en Santé Publique, 
+  les analyses doivent être conduites rapidement et les résultats largement disséminés. 
+Les pratiques actuelles de publication scientifique empêchent la dissémination rapide des résultats épidémiologiques pertinents. 
+  Nous pensons qu'un système en ligne ouvert qui implémente des pipelines bioinformatiques robustes permettant de synthétiser 
+  l'informations entre les groupes de recherche a le plus de potentiel pour passer rapidement de l'inférence épidémiologique à l'action."
+  Traduction d'un texte issu de Nextstrains.
   </>,
-  button3: "Read more about our workflow",
+  button3: "En apprendre d'avantage sur nos méthodes",
 
 };
