@@ -75,6 +75,7 @@ L’Institut de Santé Publique du Québec (INSPQ, Public Health Institut of Que
 </ul>
 
 ## Génome Québec
+<a href="http://www.genomequebec.com/">Génome Québec</a>
 La banque des Coronavirus du Québec (CoVBanQ) est une biobanque d’échantillons cliniques de patients positifs pour la COVID-19 collectés par les hôpitaux du Québec et hébergés par Génome Québec. Les échantillons collectés sont majoritairement des aliquots de prélèvements nasopharyngés ou oropharyngés, de la salive, des lavages broncho-alvéolaires, des expectorations, des tissus ou des selles. 
 
 
