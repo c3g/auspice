@@ -6,7 +6,7 @@ const FooterContainer = styled.div`
   margin-bottom: 6rem;
 `
 
-const widthLarge = 140
+const widthLarge = 180
 const widthDefault = 0.6 * widthLarge
 
 const Footer = () => (
