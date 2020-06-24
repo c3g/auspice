@@ -1,15 +1,11 @@
 # Méthodes
 
-À venir
-
 #### Menu:
 
  - [Flux d’analyse](#workflow)
  - [Stratégie d’échantillonnage](#sampling-strategy)
  - [Méthodes de séquençage](#sequencing-methods)
  - [Méthodes bioinformatiques](#bioinformatics-methods)
- - [Méthodes phylogénétiques](#phylogenetic-methods)
- - [Investigations épidémiologiques](#epidemiological-investigations)
 
 <hr/>
 
