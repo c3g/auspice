@@ -146,9 +146,9 @@ const SplashContent = ({available, dispatch, errorMessage, changePage, t}) => {
         {t('splash:subtitle1')}
       </Paragraph>
       <ButtonContainer>
-        <a href="#philosophy" className="button">
+        <Link url="/about" className="button">
           {t('splash:button1')}
-        </a>
+        </Link>
       </ButtonContainer>
       <Spacer />
 

@@ -23,7 +23,7 @@ export default {
 
 
   title3: "Philosophie",
-  pathogenTitle: "Phylogénie des pathogens",
+  pathogenTitle: "Phylogénie des pathogènes",
   pathogenText: () => <>
   "Au cours d’une infection, les pathogènes accumulent naturellement des mutations dans leurs génomes. 
   Ceci est une conséquence inévitable de la réplication imparfaite de leur génome. 
