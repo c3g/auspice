@@ -15,6 +15,7 @@ export const chooseDisplayComponentFromURL = (url) => {
     case "about":         return "about";
     case "data-info":     return "data-info";
     case "methods":       return "methods";
+    case "primers":       return "primers";
     case "researchgroup": return "researchgroup";
   }
 

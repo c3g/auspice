@@ -13,6 +13,7 @@ const Main = lazy(() => import("./components/main"));
 const About = lazy(() => import("./components/about"));
 const Data = lazy(() => import("./components/data"));
 const Methods = lazy(() => import("./components/methods"));
+const Primers = lazy(() => import("./components/primers"));
 const Contact = lazy(() => import("./components/contact"));
 const ResearchGroup = lazy(() => import("./components/researchgroup"));
 const Splash = lazy(() => import("./components/splash"));
@@ -26,6 +27,7 @@ const COMPONENT_FOR_URL = {
   "datasetLoader": <DatasetLoader/>,
   "main":          <Main/>,
   "methods":       <Methods/>,
+  "primers":       <Primers/>,
   "researchgroup": <ResearchGroup/>,
   "splash":        <Splash/>,
   "status":        <Status/>,

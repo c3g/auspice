@@ -6,6 +6,7 @@ import about from "./about.md";
 import data from "./data.md";
 import methods from "./methods.md";
 import contact from "./contact.md";
+import primers from "./primers.md";
 import translation from "./translation.json";
 
 export default {
@@ -17,5 +18,6 @@ export default {
   data: { content: { __html: data } },
   methods: { content: { __html: methods } },
   contact: { content: { __html: contact } },
+  primers: { content: { __html: primers } },
   translation
 };
