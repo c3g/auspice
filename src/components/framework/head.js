@@ -19,8 +19,6 @@ const functionProcessor = {
 
 let didInit = false
 
-const defaultLanguage = navigator.language.startsWith('en') ? 'en' : 'fr'
-
 const Head = ({metadata, language}) => {
 
   if (!didInit) {
@@ -30,7 +28,7 @@ const Head = ({metadata, language}) => {
     .init({
       resources: resources,
       lng: language,
-      fallbackLng: defaultLanguage,
+      fallbackLng: 'en',
       /* To debug any errors w.r.t. i18n, swith the second `false` to `true`
       (and this can be kept even after deployment if needed) */
       debug: process.env.NODE_ENV === 'production' ? false : false, // eslint-disable-line

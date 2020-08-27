@@ -8,9 +8,10 @@ not limited to <App>
 */
 
 const query = queryString.parse(window.location.search);
+const language = navigator.language.startsWith('en') ? 'en' : 'fr'
 
 const defaults = {
-  language: "fr"
+  language: language
 };
 
 const getFirstPageToDisplay = () => {
