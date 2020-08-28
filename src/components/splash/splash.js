@@ -75,23 +75,31 @@ const Spacer = styled.hr`
 const CardContainer = styled.div`
   display: grid;
   grid-template-columns: 33% 33% 33%;
+  column-gap: 1em;
+  row-gap: 0.5em;
   padding: 0 100px;
   margin-top: 4rem;
   margin-bottom: 6rem;
 `
 
 const Card = styled.div`
-  color: white;
-  font-size: 25px;
-  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4.5em;
+  color: #555;
+  font-size: 20px;
+  font-weight: bold;
   border-radius: 4px;
-  padding: 0.5em;
-  width: 60%;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  padding: 1em;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.05);
   }
 `
 
