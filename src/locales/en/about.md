@@ -1,7 +1,7 @@
 # CoVSeQ
 
 CoVSeQ is the partnership for Québec SARS-CoV-2 sequencing. We receive
-funding from the CanCOGeN initiative through Genome Canada and from
+funding from the <a name="cancogen" href="https://www.genomecanada.ca/en/news/genome-canada-leads-40-million-genomics-initiative-address-covid-19-pandemic">CanCOGeN initiative through Genome Canada</a>  and from
 the Ministere de la santé et des services sociaux du Québec.
 
 
@@ -26,7 +26,7 @@ The mission of the Institut de Santé Publique du Québec (INSPQ, Public Health 
 Health Laboratory of Quebec) is the reference microbiology laboratory of Québec.
 LSPQ performs specialised analyses for the diagnostic and the surveillance of
 infectious diseases
-  
+
 
 <ul>
 <li>  Dr. Michel Roger, Medical director, Co-lead of CoV-SeQ program  </li>
@@ -79,6 +79,4 @@ infectious diseases
 The Coronavirus Banq of Quebec (CoVBanQ) is a biobanq of primary clinical specimen from COVID-19 positives patients collected by
 Québec hospitals and centralized in LSPQ. Specimen collected are mainly aliquots from
 nasopharyngeal or oropharyngeal swabs, saliva, broncho-alveolar lavage, expectoration,
-tissues or feces. 
-
-
+tissues or feces.
