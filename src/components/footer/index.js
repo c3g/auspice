@@ -15,14 +15,14 @@ const Footer = () => (
     <div className="row">
       <div className="col-md-12">
         <Flex wrap="wrap" style={{marginTop: 20, justifyContent: "space-around"}}>
-          <a href="https://www.genomecanada.ca/" target="_blank" rel="noreferrer noopener">
-            <img width={widthDefault} src={require("../../images/genome_canada_logo.png")}/>
-          </a>
           <a href="https://www.inspq.qc.ca/" target="_blank" rel="noreferrer noopener">
             <img width={widthLarge} src={require("../../images/inspq.jpg")}/>
           </a>
           <a href="http://www.mcgillgenomecentre.org/" target="_blank" rel="noreferrer noopener">
             <img width={widthDefault} src={require("../../images/Genome_logo.png")}/>
+          </a>
+          <a href="https://www.genomecanada.ca/" target="_blank" rel="noreferrer noopener">
+            <img width={widthDefault} src={require("../../images/genome_canada_logo.png")}/>
           </a>
           <a href="http://www.computationalgenomics.ca/" target="_blank" rel="noreferrer noopener">
             <img width={widthDefault} src={require("../../images/c3g_source.png")}/>
