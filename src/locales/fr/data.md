@@ -1,7 +1,7 @@
 
 # Données
 
-## Jeux de données de validation
+## Jeux de données de validation (disponible bientôt)
 
 Jeux de données utilisés pour la validation de nos plateformes de séquençage et de nos pipelines bioinformatiques d’analyse sur Illumina, Nanopore et MGI seront disponibles bientôt.
 
@@ -14,48 +14,12 @@ Jeux de données utilisés pour la validation de nos plateformes de séquençage
 </ul>
 
 ## Patients québecois
-Séquençage virale de patients positifs pour la COVID-19. Les données sont regroupées par hôpital. Notez que les patients ne vivent pas nécessairement dans le voisinage des hôpitaux dans lesquels les spécimens ont été testés.
+For confidentiality purposes the first accurate date of sampling is set to March 10. All samples taken before that are set to March 1st, their real sampling date is between February 25th and March 9th.
 
- - Laboratoire de santé publique du Québec (LSPQ)
- - Laboratoire de l’Hôpital Maisonneuve-Rosemont
- - Laboratoire du Centre hospitalier universitaire de Montréal (CHUM)
- - Laboratoire du Centre universitaire de santé McGill (CUSM-site Glen)
- - Laboratoire de l’Hôpital général juif
- - Laboratoire de l’Hôpital du Sacré-Coeur de Montréal
- - Laboratoire du CHU Sainte-Justine
- - Laboratoire du Centre hospitalier universitaire de Sherbrooke (CHUS)
- - Laboratoire du Centre hospitalier universitaire de Québec (CHUQ)
- - Laboratoire de l’Hôtel-Dieu de Lévis (HDL)
- - Laboratoire de l’Hôpital de Chicoutimi
- - Laboratoire du Pavillon Sainte-Marie (CISSS de la Mauricie)
- - Laboratoire de l’Hôpital de Verdun (CIUSSS Centre-Sud-de-l’Île-de-Montréal)
- - Laboratoire de l’Hôpital régional de Rimouski (CISSS du Bas-St-Laurent)
- - Laboratoire de l’Hôpital de St-Eustache (CISSS des Laurentides)
- - Laboratoire de l’Hôpital Charles-Lemoyne (via le MAPAQ) (CISSS Montérégie-Centre)
- - Centre de santé Inuulitsivik (Puvirnituq)
- - Centre de santé Tulattavik de l'Ungava (Kuujjuaq)
- - Laboratoire de l’Institut de Cardiologie de Montréal (ICM)
- - Laboratoire de l’Institut Universitaire en Cardiologie et Pneumologie de Québec (IUCPQ)
- - Laboratoire de diagnostic moléculaire de l’ICM
- - Laboratoire de la Cité-de-la-Santé-de-Laval (CISSS de Laval)
- - Laboratoire de l’Hôpital de Rouyn-Noranda
- - Laboratoire de l’Hôpital de l’Archipel (CISSS des Îles)
- - Laboratoire de l’Enfant-Jésus (CHU de Québec)
- - Laboratoire de l’hôpital de Gatineau (CISSS de l’Outaouais)
- - Laboratoire de l’hôpital Le Royer (Baie-Comeau)
- - Laboratoire de l’hôpital de Sept-Îles (CISSS de la Côte-Nord)
- - Laboratoire de l’Hôpital Charles-Lemoyne (CISSS Montérégie-Centre)
- - Laboratoire de l’hôpital général du Lakeshore (CIUSSS de l’Ouest-de-l’Île-de-Montréal)
- - Laboratoire de l’hôpital de Mont-Laurier (CISSS des Laurentides)
- - Laboratoire de l’hôpital Laurentien (CISSS des Laurentides)
- - Laboratoire de l’hôpital du Haut-Richelieu (CISSS de la Montérégie Centre)
- - Laboratoire de l’hôpital de Lanaudière (CISSS de Lanaudière)
- - Laboratoire de l’hôpital Pierre-Le Gardeur (CISSS Lanaudière)
- - Laboratoire de l’hôpital de Saint-Jérôme (CISSS Laurentides)
- - Centre de service de Rivière-Rouge (CISSS Laurentides)
- - Centre multiservices SSS d'Argenteuil (CISSS Laurentides)
- - Laboratoire de l’hôpital Brome-Missisquois-Perkins (CHU de Sherbrooke)
- - Laboratoire de l’hôpital Sainte-Croix (CIUSSS Mauricie Centre-du-Québec)
- - Laboratoire de l’hôpital du Centre de la Mauricie (CIUSSS Mauricie Centre-du-Québec)
- - Laboratoire de l’Hôtel-Dieu d’Arthabaska (CIUSSS Mauricie Centre-du-Québec)
- - Laboratoire du Centre de santé de Chibougamau (Centre régional de santé et de services sociaux de la Baie-James
+Séquençage virale de patients positifs à la COVID-19. Pour protéger l'anonymité des personnes ayant participées au projets, les dates déchantillonage ne sont précise qu'à partir du 10 mars 2020. Avant cette date, les métadonnées indiquent le 1 mars 2020, mais l'échantillonage peut avoir été complété à n'importe quel moment entre le 22 et le 9 mars. Ces données sont misent à jour à chaque nouvelle publication.
+
+Toutes les séquences et metadonnées courrantes  [<a name="tgz" href="https://covseq.ca/data/all_fasta_and_meta.tgz">tgz</a>]  [<a name="zip" href="https://covseq.ca/data/all_fasta_and_meta.zip">zip</a>]  
+Metadonnées seule [<a name="meta" href="https://covseq.ca/data/lspq_metadata.tsv">tsv</a>]
+
+Données publiées:
+Data freeze 1 [<a name="freeze1" href="https://covseq.ca/data/releases/data_freeze1.tgz">tgz</a>] [<a name="freeze1" href="https://covseq.ca/data/releases/data_freeze1.zip">zip</a>]
