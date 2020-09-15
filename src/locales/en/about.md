@@ -7,7 +7,9 @@ the Ministere de la santé et des services sociaux du Québec.
 
 ### Partners
 
-- [Laboratoire de Santé Publique du Québec, INSPQ](#inspq)
+- [Institut National de Santé Publique (INSPQ)](#inspq)
+ - [Laboratoire de Santé Publique du Québec ](#lspq)
+ - [Direction des risques biologiques et de la santé au travail (DRBST)](#drbst)
 - [Université de Montréal](#udem)
 - [McGill Genome Center](#mgc)
 - [C3G](#c3g)
@@ -19,22 +21,29 @@ the Ministere de la santé et des services sociaux du Québec.
   <img height="400" src="../../images/CoVSeQ-CoVBanQ_Team.jpg" alt="covseq covbanq team" />
 </div>
 
-## <a name="inspq" href="https://www.inspq.qc.ca/">Public Health Laboratory of Quebec (LSPQ) - INSPQ</a>
+## <a name="inspq" href="https://www.inspq.qc.ca/">Institut National de Santé Publique (INSPQ)</a>
 
-<a href="https://www.inspq.qc.ca/">INSPQ</a> and <a href="https://www.inspq.qc.ca/lspq">LSPQ</a>
-The mission of the Institut de Santé Publique du Québec (INSPQ, Public Health Institut of Quebec) is a center of expertise and of reference for Public Health in Québec. Our mission is to support Québec’s Minister of Health and Social Services, regional public health authorities, and health and social services institutions in carrying out their public health responsibilities, by offering our expertise and specialized laboratory and screening services. Our objective is to improve the health status and the well being of the population. As a part of INSPQ, the Laboratoire de Santé Publique du Québec (LSPQ, Public
-Health Laboratory of Quebec) is the reference microbiology laboratory of Québec.
-LSPQ performs specialised analyses for the diagnostic and the surveillance of
-infectious diseases
+  >The <a href="https://www.inspq.qc.ca/"> Institut de Santé Publique du Québec (INSPQ, Public Health Institut of Quebec) </a>
+    is a center of expertise and of reference for Public Health in Québec. Our mission is to support Québec’s Minister of Health and Social Services, regional public health authorities, and health and social services institutions in carrying out their public health responsibilities, by offering our expertise and specialized laboratory and screening services. Our objective is to improve the health status and the well being of the population. As a part of INSPQ, the Laboratoire de Santé Publique du Québec (LSPQ, Public
+  Health Laboratory of Quebec) is the reference microbiology laboratory of Québec.
+  LSPQ performs specialised analyses for the diagnostic and the surveillance of
+  infectious diseases.
 
+>  ### <a name="lspq" href="https://www.inspq.qc.ca/lspq"> Public Health Laboratory of Quebec / Laboratoire de Santé Publique du Québec (LSPQ) </a>
+  <ul>
+  <li> Sandrine Moreira, Head of Genomics and Bioinformatics Labs, Assoc. Prof., Lead of CoV-SeQ program </li>
+  <li>  Dr. Michel Roger, Medical director, Co-lead of CoV-SeQ program  </li>
+  <li>  Eric Fournier, Bioinformatician</li>
+  <li>  Dr. Réjean Dion, Public Health Physician</li>
+  <li>  Dr. Hugues Charest, Head of respiratory viruses</li>
+  </ul>
 
-<ul>
-<li>  Dr. Michel Roger, Medical director, Co-lead of CoV-SeQ program  </li>
-<li>  Dr. Sandrine Moreira, Head of genomics and bioinformatics, Assoc. Prof., Lead of CoV-SeQ program</li>
-<li>  Dr. Hugues Charest, Head of respiratory viruses</li>
-<li>  Dr. Réjean Dion, Medical epidemiologist, Lead of CoVSeQ Epidemiology Working Group</li>
-<li>  Eric Fournier, Bioinformatician</li>
-</ul>
+>  ### <a name="drbst" href="https://https://www.inspq.qc.ca">Direction des risques biologiques et de la santé au travail (DRBST)</a>
+  <ul>
+  <li>
+  Christophe Garenc
+  </li>
+  </ul>
 
 
 ## <a name="udem" href="https://www.umontreal.ca/">Université de Montréal</a>
@@ -76,7 +85,5 @@ infectious diseases
 
 ## <a name="gq" href="http://www.genomequebec.com/">Génome Québec</a>
 
-The Coronavirus Banq of Quebec (CoVBanQ) is a biobanq of primary clinical specimen from COVID-19 positives patients collected by
-Québec hospitals and centralized in LSPQ. Specimen collected are mainly aliquots from
-nasopharyngeal or oropharyngeal swabs, saliva, broncho-alveolar lavage, expectoration,
-tissues or feces.
+>The Coronavirus Banq of Quebec (CoVBanQ) is a biobank of primary clinical specimen from COVID-19 positives patients collected by
+Québec hospitals plus the LSPQ and then hosted by Genome Québec. Specimens collected are mainly aliquots from nasopharyngeal or oropharyngeal swabs, saliva, broncho-alveolar lavage, expectoration, tissues or feces.
