@@ -28,13 +28,13 @@ le Ministère de la santé et des services sociaux du Québec.
 
 
 >  ### <a name="lspq" href="https://www.inspq.qc.ca/lspq"> Laboratoire de Santé Publique du Québe (LSPQ) </a>
-<ul>
-<li>  Sandrine Moreira, Responsable Génomique et Bio-informatique</li>
-<li>  Michel Roger, Directeur Medical </li>
-<li>  Eric Fournier, Bioinformaticien</li>
-<li>  Dr. Réjean Dion, Épidémiologiste médical</li>
-<li>  Dr. Hugues Charest, Responsable virus respiratoires</li>
-</ul>
+  <ul>
+  <li>  Sandrine Moreira, Responsable Génomique et Bio-informatique</li>
+  <li>  Michel Roger, Directeur Medical </li>
+  <li>  Eric Fournier, Bioinformaticien</li>
+  <li>  Dr. Réjean Dion, Épidémiologiste médical</li>
+  <li>  Dr. Hugues Charest, Responsable virus respiratoires</li>
+  </ul>
 
 >  ### <a name="drbst" href="https://https://www.inspq.qc.ca">Direction des risques biologiques et de la santé au travail (DRBST)</a>
   <ul>
