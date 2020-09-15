@@ -31,11 +31,11 @@ the Ministere de la santé et des services sociaux du Québec.
 
 >  ### <a name="lspq" href="https://www.inspq.qc.ca/lspq"> Public Health Laboratory of Quebec / Laboratoire de Santé Publique du Québec (LSPQ) </a>
   <ul>
-  <li> Sandrine Moreira, Head of Genomics and Bioinformatics Labs, Assoc. Prof., Lead of CoV-SeQ program </li>
-  <li>  Dr. Michel Roger, Medical director, Co-lead of CoV-SeQ program  </li>
-  <li>  Eric Fournier, Bioinformatician</li>
+  <li> <b>Sandrine Moreira, Head of Genomics and Bioinformatics Labs, Coordinator of CoVSeQ initiative</b> </li>
+  <li>  Dr. Michel Roger, Medical director, Coordinator of CoVSeQ initiative </li>
+  <li>  Eric Fournier, Bioinformatician, Phylogenetic Analysis</li>
   <li>  Dr. Réjean Dion, Public Health Physician</li>
-  <li>  Dr. Hugues Charest, Head of respiratory viruses</li>
+  <li>  Dr. Hugues Charest, Head of Respiratory Virus departmentDirection</li>
   </ul>
 
 >  ### <a name="drbst" href="https://https://www.inspq.qc.ca">Direction des risques biologiques et de la santé au travail (DRBST)</a>
