@@ -31,7 +31,7 @@ the Ministere de la santé et des services sociaux du Québec.
 
 >  ### <a name="lspq" href="https://www.inspq.qc.ca/lspq"> Public Health Laboratory of Quebec / Laboratoire de Santé Publique du Québec (LSPQ) </a>
   <ul>
-  <li> <b>Sandrine Moreira, Head of Genomics and Bioinformatics Labs, Coordinator of CoVSeQ initiative</b> </li>
+  <li> <b>Sandrine Moreira, Head of Genomics and Bioinformatics Lab, Coordinator of CoVSeQ initiative</b> </li>
   <li>  Dr. Michel Roger, Medical director, Coordinator of CoVSeQ initiative </li>
   <li>  Eric Fournier, Bioinformatician, Phylogenetic Analysis</li>
   <li>  Dr. Réjean Dion, Public Health Physician</li>
