@@ -74,6 +74,8 @@ the Ministere de la santé et des services sociaux du Québec.
 <li>  Paul Stretenowich, Bioinformatics consultant </li>
 <li>  José-Hector Galvez, Bioinformatics specialist </li>
 <li>  Pierre-Olivier Quirion, HPC specialist  </li>
+<li>  David Bujold, Bioinformatics manager - Data Unit team </li>
+<li>  Romain Grégoire, Web Developer  </li>
 </ul>
 
 ## <a name="cq" href="https://www.calculquebec.ca/">Calcul Québec</a>

@@ -58,21 +58,23 @@ le Ministère de la santé et des services sociaux du Québec.
 ## <a name="mgc" href="http://www.mcgillgenomecentre.org/">McGill Genome Center</a>
 
 <ul>
-<li>  Prof. Ioannis Ragoussis, Head of Genome Science </li>
-<li>  Sarah Reiling, Research associate </li>
-<li>  Jesse Shapiro, Assoc. Prof </li>
+<li>  Prof. Ioannis Ragoussis, Responsable des sciences du génome  </li>
+<li>  Sarah Reiling, Professionnelle de recherche </li>
+<li>  Jesse Shapiro, Professeur agrégé  </li>
 <li>  Carmen Lia Murall Post Doc </li>
-<li>  Prof. Guillaume Bourque, Head of Bioinformatics </li>
+<li>  Prof. Guillaume Bourque, Directeur de la Bioinformatique </li>
 </ul>
 
 ## <a name="c3g" href="http://www.computationalgenomics.ca/">C3G</a>
 
 <ul>
 <li>  Prof. Guillaume Bourque, Director </li>
-<li>  Mathieu Bourgey, Bioinformatics manager - Technological development team </li>
-<li>  Paul Stretenowich, Bioinformatics consultant </li>
-<li>  José-Hector Galvez, Bioinformatics specialist </li>
-<li>  Pierre-Olivier Quirion, Calcul Haute Performance  </li>
+<li>  Mathieu Bourgey, Directeur Bioinformatique - Tech-Dev </li>
+<li>  Paul Stretenowich, Consultant Bioinformatique </li>
+<li>  José-Hector Galvez, Spécialiste Bioinformatique </li>
+<li>  Pierre-Olivier Quirion, Calcul Haute Performance </li>
+<li>  David Bujold, Directieur Bioinformatique - Données </li>
+<li>  Romain Grégoire, Développeur Web </li>
 </ul>
 
 ## <a name="cq" href="https://www.calculquebec.ca/">Calcul Québec</a>
