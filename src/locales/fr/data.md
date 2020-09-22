@@ -14,7 +14,6 @@ Jeux de données utilisés pour la validation de nos plateformes de séquençage
 </ul>
 
 ## Patients québecois
-For confidentiality purposes the first accurate date of sampling is set to March 10. All samples taken before that are set to March 1st, their real sampling date is between February 25th and March 9th.
 
 Séquençage virale de patients positifs à la COVID-19. Pour protéger l'anonymité des personnes ayant participées au projets, les dates déchantillonage ne sont précise qu'à partir du 10 mars 2020. Avant cette date, les métadonnées indiquent le 1 mars 2020, mais l'échantillonage peut avoir été complété à n'importe quel moment entre le 22 et le 9 mars. Ces données sont misent à jour à chaque nouvelle publication.
 
