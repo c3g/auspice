@@ -21,4 +21,4 @@ Toutes les séquences et metadonnées courrantes  [<a name="tgz" href="https://c
 Metadonnées seule [<a name="meta" href="https://covseq.ca/data/lspq_metadata.tsv">tsv</a>]
 
 Données publiées:
-Release 1 [<a name="freeze1" href="https://covseq.ca/data/releases/quebec_data_release-1.tgz">tgz</a>] [<a name="freeze1" href="https://covseq.ca/data/releases/quebec_data_release-1.zip">zip</a>]
+Release 1 [<a name="freeze1" href="https://covseq.ca/data/releases/quebec_data_release-1.tgz">tgz</a>] [<a name="freeze1" href="https://covseq.ca/data/releases/quebec_data_release-1.zip">zip</a>] | Données d'accompagnements [<a name="gsaid_freeze1" href="https://covseq.ca/data/releases/gsaid_release-1_compagnion.tgz">tgz</a>] [<a name="gsaid_freeze1" href="https://covseq.ca/data/releases/gsaid_release-1_compagnion.tgz">zip</a>]
