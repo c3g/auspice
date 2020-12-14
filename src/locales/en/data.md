@@ -3,12 +3,12 @@
 
 ## Validation dataset (comming soon)
 
-Dataset used for the validation of our sequencing platforms and our bioinformatics pipeline on Illumina, Nanopore and MGI platforms will soon be available.
+Dataset used for the validation of our sequencing platforms and our bioinformatics pipeline on Illumina, Nanopore and MGI platforms are being made available as soon as they are ready.
 
 <ul>
 <li>Viral cultures</li>
 <li>Time series dilution of a viral culture</li>
-<li>Mixed population (variable proportion of viral culture spiked in a clinical sample background)</li>
+<li><a name="Mixed population" href="https://covseq.ca/data/COVID_full_processing/mix_population_spiked_in.tar">Mixed population</a> (variable proportion of viral culture spiked in a clinical sample background)</li>
 <li>The Estrie dataset</li>
 <li>Amplicon sequencing vs Target Capture
 </ul>

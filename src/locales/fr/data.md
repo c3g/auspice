@@ -3,12 +3,12 @@
 
 ## Jeux de données de validation (disponible bientôt)
 
-Jeux de données utilisés pour la validation de nos plateformes de séquençage et de nos pipelines bioinformatiques d’analyse sur Illumina, Nanopore et MGI seront disponibles bientôt.
+Jeux de données utilisés pour la validation de nos plateformes de séquençage et de nos pipelines bioinformatiques d’analyse sur Illumina, Nanopore et MGI sont publiés aussi tôt que possible.
 
 <ul>
 <li>Cultures virales</li>
 <li>Dilution en série d’une culture virale</li>
-<li>Populations mixtes (proportion variable d’une culture virale ajoutée à un échantillon clinique afin de mimer des infections mixtes) </li>
+<li><a name="Populations mixtes" href="https://covseq.ca/data/COVID_full_processing/mix_population_spiked_in.tar">Populations mixtes</a> (proportion variable d’une culture virale ajoutée à un échantillon clinique afin de mimer des infections mixtes) </li>
 <li>Jeu de données “Estrie”</li>
 <li>Séquençage par amplicon vs Capture ciblée
 </ul>
