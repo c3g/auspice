@@ -1,7 +1,7 @@
 
 # Data
 
-## Validation dataset (comming soon)
+## Validation dataset
 
 Dataset used for the validation of our sequencing platforms and our bioinformatics pipeline on Illumina, Nanopore and MGI platforms are being made available as soon as they are ready.
 

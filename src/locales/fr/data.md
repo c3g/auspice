@@ -1,7 +1,7 @@
 
 # Données
 
-## Jeux de données de validation (disponible bientôt)
+## Jeux de données de validation
 
 Jeux de données utilisés pour la validation de nos plateformes de séquençage et de nos pipelines bioinformatiques d’analyse sur Illumina, Nanopore et MGI sont publiés aussi tôt que possible.
 
