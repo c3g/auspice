@@ -17,11 +17,13 @@
 
 
 ### Méthodes de séquençage
+Dans les rondes d'analyse d'éclosions une librairie Nanopore est préparer et peut contenir jusqu'à 95 échantillons. Pour les analyses à haut débit typique, une librairie Illumina NextFlex est préparé sur la platform NovaSeq où jusqu'à 380 échantillons pour chacunes des deux lignes est ingéré à chaques ronde.
 <ul>
-<li>Illumina </li>
-<li>MGI </li>
-<li>Nanopore </li>
-</ul>
+<li> <a name="lunascript" href="dx.doi.org/10.17504/protocols.io.bjgekjte">Lunascript RT</a></li>
+<li><a name="artic_pcr" href="dx.doi.org/10.17504/protocols.io.bj9hkr36">Artic PCR</a> </li>
+<li> <a name="nanopore" href="dx.doi.org/10.17504/protocols.io.bjkvkkw6">Nanopore libprep</a> </li>
+<li><a name="illumina_seq" href="dx.doi.org/10.17504/protocols.io.bjgnkjve"> Illumina NextFlex libprep</a> </li>
+<li>MGI</li>
 
 ### Bio-informatique
 <ul>
