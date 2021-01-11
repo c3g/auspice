@@ -25,7 +25,7 @@
 <li><a name="artic_pcr" href="https://dx.doi.org/10.17504/protocols.io.bj9hkr36">Artic PCR</a> </li>
 <li> <a name="nanopore" href="https://dx.doi.org/10.17504/protocols.io.bjkvkkw6">Nanopore libprep</a> </li>
 <li><a name="illumina_seq" href="https://dx.doi.org/10.17504/protocols.io.bjgnkjve"> Illumina NextFlex libprep</a> </li>
-<li>MGI</li>
+<li><a name="freeze1" href="https://covseq.ca/data/public_documents/MGI-procedure.pdf">MGI</a></li>
 </ul>
 
 ### Bio-informatique
