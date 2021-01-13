@@ -72,6 +72,7 @@ le Ministère de la santé et des services sociaux du Québec.
 <li>  Mathieu Bourgey, Directeur Bioinformatique - Tech-Dev </li>
 <li>  Paul Stretenowich, Consultant Bioinformatique </li>
 <li>  José-Hector Galvez, Spécialiste Bioinformatique </li>
+<li> Senthilkumar Kailasam, Consultant Bioinformatique </li>
 <li>  Pierre-Olivier Quirion, Calcul Haute Performance </li>
 <li>  David Bujold, Directieur Bioinformatique - Données </li>
 <li>  Romain Grégoire, Développeur Web </li>

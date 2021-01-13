@@ -73,6 +73,7 @@ the Ministere de la santé et des services sociaux du Québec.
 <li>  Mathieu Bourgey, Bioinformatics manager - Technological development team </li>
 <li>  Paul Stretenowich, Bioinformatics consultant </li>
 <li>  José-Hector Galvez, Bioinformatics specialist </li>
+<li>  Senthilkumar Kailasam, Bioinformatics Consultant</li>
 <li>  Pierre-Olivier Quirion, HPC specialist  </li>
 <li>  David Bujold, Bioinformatics manager - Data Unit team </li>
 <li>  Romain Grégoire, Web Developer  </li>
