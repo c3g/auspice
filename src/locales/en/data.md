@@ -25,6 +25,8 @@ Data releases:
 
 Release 1 [<a name="freeze1" href="https://covseq.ca/data/releases/quebec_data_release-1.tgz">tgz</a>] [<a name="freeze1" href="https://covseq.ca/data/releases/quebec_data_release-1.zip">zip</a>] | Gsaid companion data [<a name="gsaid_freeze1" href="https://covseq.ca/data/releases/gsaid_release-1_compagnion.tgz">tgz</a>] [<a name="gsaid_freeze1" href="https://covseq.ca/data/releases/gsaid_release-1_compagnion.tgz">zip</a>]
 
+Release 2 [<a name="freeze2" href="https://covseq.ca/data/releases/quebec_data_release-2.tgz">tgz</a>] [<a name="freeze1" href="https://covseq.ca/data/releases/quebec_data_release-2.zip">zip</a>]
+
 </ul>
 
 <!-- ### _Special Cases_
